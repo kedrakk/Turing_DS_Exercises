@@ -1,6 +1,9 @@
-com/turingds/dsexercise/util/UtilsTest.class
 com/turingds/dsexercise/search/LinearSearchTest.class
-com/turingds/dsexercise/DsexerciseTest.class
 com/turingds/dsexercise/search/BinarySearchTest.class
 com/turingds/dsexercise/sorting/SortingTest.class
 com/turingds/dsexercise/tdd/CapitalTest.class
+com/turingds/dsexercise/datastructure/ReverseTest.class
+com/turingds/dsexercise/util/UtilsTest.class
+com/turingds/dsexercise/datastructure/StackDSTest.class
+com/turingds/dsexercise/datastructure/DelimiterTest.class
+com/turingds/dsexercise/DsexerciseTest.class

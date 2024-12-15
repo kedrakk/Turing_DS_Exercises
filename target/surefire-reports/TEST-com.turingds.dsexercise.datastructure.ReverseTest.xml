@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.turingds.dsexercise.sorting.SortingTest" time="0.04" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.turingds.dsexercise.datastructure.ReverseTest" time="0.04" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,10 +12,10 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/Applications/Apache NetBeans.app/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/kedk/NetBeansProjects/dsexercise/target/surefire/surefirebooter-20241215141416111_3.jar /Users/kedk/NetBeansProjects/dsexercise/target/surefire 2024-12-15T14-14-16_046-jvmRun1 surefire-20241215141416111_1tmp surefire_0-20241215141416111_2tmp"/>
+    <property name="sun.java.command" value="/Users/kedk/NetBeansProjects/dsexercise/target/surefire/surefirebooter-20241215152937828_3.jar /Users/kedk/NetBeansProjects/dsexercise/target/surefire 2024-12-15T15-29-37_750-jvmRun1 surefire-20241215152937828_1tmp surefire_0-20241215152937828_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="com.turingds.dsexercise.sorting.SortingTest"/>
+    <property name="test" value="com.turingds.dsexercise.datastructure.ReverseTest"/>
     <property name="surefire.test.class.path" value="/Users/kedk/NetBeansProjects/dsexercise/target/test-classes:/Users/kedk/NetBeansProjects/dsexercise/target/classes:/Users/kedk/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.3/junit-jupiter-api-5.10.3.jar:/Users/kedk/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/kedk/.m2/repository/org/junit/platform/junit-platform-commons/1.10.3/junit-platform-commons-1.10.3.jar:/Users/kedk/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/kedk/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.3/junit-jupiter-params-5.10.3.jar:/Users/kedk/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.3/junit-jupiter-engine-5.10.3.jar:/Users/kedk/.m2/repository/org/junit/platform/junit-platform-engine/1.10.3/junit-platform-engine-1.10.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/kedk"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/kedk/NetBeansProjects/dsexercise/target/surefire/surefirebooter-20241215141416111_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/kedk/NetBeansProjects/dsexercise/target/surefire/surefirebooter-20241215152937828_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="23.0.1+11"/>
@@ -60,13 +60,7 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="testDoubleElementSort" classname="com.turingds.dsexercise.sorting.SortingTest" time="0.016"/>
-  <testcase name="testSort" classname="com.turingds.dsexercise.sorting.SortingTest" time="0.001"/>
-  <testcase name="testSingleElementSort" classname="com.turingds.dsexercise.sorting.SortingTest" time="0.001"/>
-  <testcase name="testRandomElementSort" classname="com.turingds.dsexercise.sorting.SortingTest" time="0.001">
-    <system-out><![CDATA[Original: , 202, 60, 351, 73, 250, 347, 205, 275, 301, 88, 289, 17, 350, 163, 339, 337, 265, 381, 62, 264
-Sorted: , 17, 60, 62, 73, 88, 163, 202, 205, 250, 264, 265, 275, 289, 301, 337, 339, 347, 350, 351, 381
-]]></system-out>
-  </testcase>
-  <testcase name="testEmptyElementSort" classname="com.turingds.dsexercise.sorting.SortingTest" time="0.0"/>
+  <testcase name="testEmpty" classname="com.turingds.dsexercise.datastructure.ReverseTest" time="0.019"/>
+  <testcase name="testMultiple" classname="com.turingds.dsexercise.datastructure.ReverseTest" time="0.001"/>
+  <testcase name="testSingle" classname="com.turingds.dsexercise.datastructure.ReverseTest" time="0.001"/>
 </testsuite>

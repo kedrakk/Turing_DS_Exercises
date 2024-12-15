@@ -16,7 +16,8 @@ public class SortingTest {
 
     Utils utils = new Utils();
 //    SortingAlgorithm sortingAlgo = new BubbleSorting();
-    SortingAlgorithm sortingAlgo = new SelectionSorting();
+//    SortingAlgorithm sortingAlgo = new SelectionSorting();
+    SortingAlgorithm sortingAlgo = new InsertionSorting();
 
     @Test
     public void testSort() {
