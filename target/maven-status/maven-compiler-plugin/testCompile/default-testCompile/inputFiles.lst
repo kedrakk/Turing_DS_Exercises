@@ -1,5 +1,7 @@
 /Users/kedk/NetBeansProjects/dsexercise/src/test/java/com/turingds/dsexercise/DsexerciseTest.java
+/Users/kedk/NetBeansProjects/dsexercise/src/test/java/com/turingds/dsexercise/datastructure/CircularQueueTest.java
 /Users/kedk/NetBeansProjects/dsexercise/src/test/java/com/turingds/dsexercise/datastructure/DelimiterTest.java
+/Users/kedk/NetBeansProjects/dsexercise/src/test/java/com/turingds/dsexercise/datastructure/QueueTest.java
 /Users/kedk/NetBeansProjects/dsexercise/src/test/java/com/turingds/dsexercise/datastructure/ReverseTest.java
 /Users/kedk/NetBeansProjects/dsexercise/src/test/java/com/turingds/dsexercise/datastructure/StackDSTest.java
 /Users/kedk/NetBeansProjects/dsexercise/src/test/java/com/turingds/dsexercise/search/BinarySearchTest.java

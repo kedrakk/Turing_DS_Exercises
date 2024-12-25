@@ -5,43 +5,21 @@
 package com.turingds.dsexercise.datastructure;
 
 import static org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 /**
  *
  * @author kedk
  */
 public class DelimiterTest {
-    
+
     Delimiter delimiter = new Delimiter();
 
-    @Test
-    public void testEmpty() {
-        boolean valid = delimiter.isValid("");
-        assertTrue(valid);
-    }
-    
-    @Test
-    public void testBracket() {
-        boolean valid = delimiter.isValid("c[d]");
-        assertTrue(valid);
-    }
-    
-    @Test
-    public void testBracketNegative() {
-        boolean valid = delimiter.isValid("c[d");
-        assertFalse(valid);
-    }
-    
-    @Test
-    public void testCurlyBracket() {
-        boolean valid = delimiter.isValid("a{bc}d");
-        assertTrue(valid);
-    }
-    
-    @Test
-    public void testCurlyBracketNegative() {
-        boolean valid = delimiter.isValid("a{bcd");
-        assertFalse(valid);
+    @ParameterizedTest
+    @CsvSource({"'',true", "c[d],true", "c[d,false", "a{bc}d,true", "a{bcd,false", "a[b{c}d]e,true", "a[b{c}d]e},false", "a[b(c),false"})
+    void testDelimiterWithParameterizedTest(String input, Boolean expected) {
+        Boolean acutal = delimiter.isValid(input);
+        assertEquals(expected, acutal);
     }
 }

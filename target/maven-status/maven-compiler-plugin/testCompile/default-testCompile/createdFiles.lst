@@ -7,3 +7,5 @@ com/turingds/dsexercise/util/UtilsTest.class
 com/turingds/dsexercise/datastructure/StackDSTest.class
 com/turingds/dsexercise/datastructure/DelimiterTest.class
 com/turingds/dsexercise/DsexerciseTest.class
+com/turingds/dsexercise/datastructure/QueueTest.class
+com/turingds/dsexercise/datastructure/CircularQueueTest.class
