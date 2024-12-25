@@ -79,4 +79,25 @@ public class CircularQueueTest {
         assertEquals(1, queue.size());
         assertEquals(100, queue.dequeue());
     }
+
+    @Test
+    public void testDequeueIfEmpty() {
+        queue.enque(100);
+        queue.dequeue();
+        RuntimeException excp = assertThrows(RuntimeException.class, () -> {
+            queue.dequeue();
+        });
+        assertEquals("Queue is empty", excp.getMessage());
+    }
+
+    @Test
+    public void testEnqueIfFull() {
+        for (int i = 0; i < 10; i++) {
+            queue.enque(i);
+        }
+        RuntimeException excp = assertThrows(RuntimeException.class, () -> {
+            queue.enque(100);
+        });
+        assertEquals("Queue is full", excp.getMessage());
+    }
 }

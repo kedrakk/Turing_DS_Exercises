@@ -10,26 +10,46 @@ package com.turingds.dsexercise.datastructure;
  */
 public class CircularQueue extends Queue {
 
+    int size = 0;
+
     public CircularQueue() {
         super();
     }
 
     @Override
     public void enque(int item) {
-        int index = this.tail % this.items.length;
-        this.items[index] = item;
-        this.tail = index + 1;
+        if (isFull()) {
+            throw new RuntimeException("Queue is full");
+        } else {
+            int index = this.tail % this.items.length;
+            this.items[index] = item;
+            this.tail = index + 1;
+            this.size++;
+        }
     }
 
     @Override
     int dequeue() {
-        int index = this.head % this.items.length;
-        this.head = index + 1;
-        return this.items[index];
+        if (isEmpty()) {
+            throw new RuntimeException("Queue is empty");
+        } else {
+            int index = this.head % this.items.length;
+            this.head = index + 1;
+            this.size--;
+            return this.items[index];
+        }
     }
-    
+
+    private boolean isEmpty() {
+        return this.size == 0;
+    }
+
+    private boolean isFull() {
+        return this.size == this.items.length;
+    }
+
     @Override
     public int size() {
-        return this.tail - this.head;
+        return this.size;
     }
 }

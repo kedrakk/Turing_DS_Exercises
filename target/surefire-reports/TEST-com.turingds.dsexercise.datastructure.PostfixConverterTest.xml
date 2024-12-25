@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.turingds.dsexercise.datastructure.CircularQueueTest" time="0.029" tests="9" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.turingds.dsexercise.datastructure.PostfixConverterTest" time="0.044" tests="1" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,10 +12,10 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/Applications/Apache NetBeans.app/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/kedk/NetBeansProjects/dsexercise/target/surefire/surefirebooter-20241225121027001_3.jar /Users/kedk/NetBeansProjects/dsexercise/target/surefire 2024-12-25T12-10-26_956-jvmRun1 surefire-20241225121027001_1tmp surefire_0-20241225121027001_2tmp"/>
+    <property name="sun.java.command" value="/Users/kedk/NetBeansProjects/dsexercise/target/surefire/surefirebooter-20241225140152488_3.jar /Users/kedk/NetBeansProjects/dsexercise/target/surefire 2024-12-25T14-01-52_418-jvmRun1 surefire-20241225140152488_1tmp surefire_0-20241225140152488_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="com.turingds.dsexercise.datastructure.CircularQueueTest"/>
+    <property name="test" value="com.turingds.dsexercise.datastructure.PostfixConverterTest"/>
     <property name="surefire.test.class.path" value="/Users/kedk/NetBeansProjects/dsexercise/target/test-classes:/Users/kedk/NetBeansProjects/dsexercise/target/classes:/Users/kedk/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.3/junit-jupiter-api-5.10.3.jar:/Users/kedk/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/kedk/.m2/repository/org/junit/platform/junit-platform-commons/1.10.3/junit-platform-commons-1.10.3.jar:/Users/kedk/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/kedk/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.3/junit-jupiter-params-5.10.3.jar:/Users/kedk/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.3/junit-jupiter-engine-5.10.3.jar:/Users/kedk/.m2/repository/org/junit/platform/junit-platform-engine/1.10.3/junit-platform-engine-1.10.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/kedk"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/kedk/NetBeansProjects/dsexercise/target/surefire/surefirebooter-20241225121027001_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/kedk/NetBeansProjects/dsexercise/target/surefire/surefirebooter-20241225140152488_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="23.0.1+11"/>
@@ -60,13 +60,14 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="testEnqueMultipleItems" classname="com.turingds.dsexercise.datastructure.CircularQueueTest" time="0.01"/>
-  <testcase name="testEnque200" classname="com.turingds.dsexercise.datastructure.CircularQueueTest" time="0.0"/>
-  <testcase name="testBoundary" classname="com.turingds.dsexercise.datastructure.CircularQueueTest" time="0.0"/>
-  <testcase name="testEnque" classname="com.turingds.dsexercise.datastructure.CircularQueueTest" time="0.0"/>
-  <testcase name="testSize" classname="com.turingds.dsexercise.datastructure.CircularQueueTest" time="0.0"/>
-  <testcase name="testEnqueIfFull" classname="com.turingds.dsexercise.datastructure.CircularQueueTest" time="0.002"/>
-  <testcase name="testCircularQueueCase" classname="com.turingds.dsexercise.datastructure.CircularQueueTest" time="0.001"/>
-  <testcase name="testDequeue" classname="com.turingds.dsexercise.datastructure.CircularQueueTest" time="0.001"/>
-  <testcase name="testDequeueIfEmpty" classname="com.turingds.dsexercise.datastructure.CircularQueueTest" time="0.0"/>
+  <testcase name="testParenthesis" classname="com.turingds.dsexercise.datastructure.PostfixConverterTest" time="0.024">
+    <error message="Cannot invoke &quot;java.lang.Integer.intValue()&quot; because the return value of &quot;java.util.HashMap.get(Object)&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.HashMap.get(Object)" is null
+	at com.turingds.dsexercise.datastructure.PostfixConverter.isHigherOrEqualOperator(PostfixConverter.java:28)
+	at com.turingds.dsexercise.datastructure.PostfixConverter.convert(PostfixConverter.java:66)
+	at com.turingds.dsexercise.datastructure.PostfixConverterTest.testParenthesis(PostfixConverterTest.java:39)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+]]></error>
+  </testcase>
 </testsuite>

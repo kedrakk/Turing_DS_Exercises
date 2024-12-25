@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: com.turingds.dsexercise.datastructure.PostfixConverterTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.044 s <<< FAILURE! -- in com.turingds.dsexercise.datastructure.PostfixConverterTest
+com.turingds.dsexercise.datastructure.PostfixConverterTest.testParenthesis -- Time elapsed: 0.024 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.HashMap.get(Object)" is null
+	at com.turingds.dsexercise.datastructure.PostfixConverter.isHigherOrEqualOperator(PostfixConverter.java:28)
+	at com.turingds.dsexercise.datastructure.PostfixConverter.convert(PostfixConverter.java:66)
+	at com.turingds.dsexercise.datastructure.PostfixConverterTest.testParenthesis(PostfixConverterTest.java:39)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
