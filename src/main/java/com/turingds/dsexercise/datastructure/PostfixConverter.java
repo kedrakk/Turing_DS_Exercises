@@ -63,7 +63,7 @@ class PostfixConverter {
                     operators.push(currentChar);
                 } else {
                     //pop all higher or equal operators and add to result
-                    while (!(operators.isEmpty()) && this.isHigherOrEqualOperator(operators.peek(), currentChar)) {
+                    while (!(operators.isEmpty()) && (operators.peek() != '(') && this.isHigherOrEqualOperator(operators.peek(), currentChar)) {
                         result += operators.pop();
                     }
                     operators.push(currentChar);

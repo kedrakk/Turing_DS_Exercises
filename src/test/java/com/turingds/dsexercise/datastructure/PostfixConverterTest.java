@@ -15,24 +15,24 @@ public class PostfixConverterTest {
 
     PostfixConverter postfixConverter = new PostfixConverter();
 
-//    @Test
-//    public void testBaseCase() {
-//        assertEquals("ab+", postfixConverter.convert("a+b"));
-//        assertEquals("ab-", postfixConverter.convert("a-b"));
-//    }
-//
-//    @Test
-//    public void testWithTwoOperators() {
-//        assertEquals("ab+c-", postfixConverter.convert("a+b-c"));
-//    }
-//
-//    @Test
-//    public void testDiffPrecedence() {
-//        assertEquals("ab*c+", postfixConverter.convert("a*b+c"));
-//        assertEquals("abc*+", postfixConverter.convert("a+b*c"));
-//        assertEquals("ab*cd*+", postfixConverter.convert("a*b+c*d"));
-//        assertEquals("ab/cd*+", postfixConverter.convert("a/b+c*d"));
-//    }
+    @Test
+    public void testBaseCase() {
+        assertEquals("ab+", postfixConverter.convert("a+b"));
+        assertEquals("ab-", postfixConverter.convert("a-b"));
+    }
+
+    @Test
+    public void testWithTwoOperators() {
+        assertEquals("ab+c-", postfixConverter.convert("a+b-c"));
+    }
+
+    @Test
+    public void testDiffPrecedence() {
+        assertEquals("ab*c+", postfixConverter.convert("a*b+c"));
+        assertEquals("abc*+", postfixConverter.convert("a+b*c"));
+        assertEquals("ab*cd*+", postfixConverter.convert("a*b+c*d"));
+        assertEquals("ab/cd*+", postfixConverter.convert("a/b+c*d"));
+    }
     
     @Test
     public void testParenthesis() {
