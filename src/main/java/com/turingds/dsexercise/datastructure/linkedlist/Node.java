@@ -8,7 +8,7 @@ package com.turingds.dsexercise.datastructure.linkedlist;
  *
  * @author kedk
  */
-class Node {
+public class Node {
 
     int value;
     Node next;
@@ -23,5 +23,9 @@ class Node {
     
     public int getValue(){
         return this.value;
+    }
+    
+    public Node getNext(){
+        return this.next;
     }
 }

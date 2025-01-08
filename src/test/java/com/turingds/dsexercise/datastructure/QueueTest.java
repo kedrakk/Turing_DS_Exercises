@@ -14,7 +14,8 @@ import org.junit.jupiter.api.Test;
  */
 public class QueueTest {
 
-    Queue queue = new Queue();
+//    Queue queue = new Queue();
+    QueueByLinkedList queue = new QueueByLinkedList();
 
     @Test
     public void testEnque() {
@@ -65,21 +66,21 @@ public class QueueTest {
         }
     }
 
-    @Test
-    public void testQueueIsFull() {
-        for (int i = 0; i < 10; i++) {
-            queue.enque(i);
-        }
-        assertEquals(10, queue.size());
-        for (int i = 0; i < 10; i++) {
-            int item = queue.dequeue();
-            assertEquals(i, item);
-        }
-        RuntimeException excp = assertThrows(RuntimeException.class, () -> {
-            queue.enque(100);
-        });
-        assertEquals("Queue is full", excp.getMessage());
-    }
+//    @Test
+//    public void testQueueIsFull() {
+//        for (int i = 0; i < 10; i++) {
+//            queue.enque(i);
+//        }
+//        assertEquals(10, queue.size());
+//        for (int i = 0; i < 10; i++) {
+//            int item = queue.dequeue();
+//            assertEquals(i, item);
+//        }
+//        RuntimeException excp = assertThrows(RuntimeException.class, () -> {
+//            queue.enque(100);
+//        });
+//        assertEquals("Queue is full", excp.getMessage());
+//    }
 
     @Test
     public void testQueueIsEmpty() {

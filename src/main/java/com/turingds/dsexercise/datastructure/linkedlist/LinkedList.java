@@ -10,15 +10,15 @@ import java.util.Iterator;
  *
  * @author kedk
  */
-class LinkedList implements Iterable {
+public class LinkedList implements Iterable {
 
-    Node first;
-    Node last;
+    protected Node first;
+    protected Node last;
 
-    public LinkedList() {
+    protected LinkedList() {
     }
 
-    public LinkedList(Node first) {
+    protected LinkedList(Node first) {
         this.first = first;
         this.last = first;
     }
@@ -60,18 +60,34 @@ class LinkedList implements Iterable {
         return null;
     }
 
+    protected Node getFirst() {
+        return this.first;
+    }
+
+    protected Node getLast() {
+        return this.last;
+    }
+
     public Node deleteNode(int value) {
-        Node nodeToDelete = this.find(value);
-        if (nodeToDelete != null) {
-            if (this.first == nodeToDelete) {
-                if (this.last == this.last) {
-                    this.first = null;
-                    this.last = null;
+        Node previous = null;
+        Node currentNode = this.first;
+        Node nodeToDelete = null;
+        while (currentNode != null) {
+            if (currentNode.value == value) {
+                nodeToDelete = currentNode;
+                if (previous != null) {
+                    previous.next = nodeToDelete.next;
+                    if (nodeToDelete.next == null) {
+                        this.last = previous;
+                    }
+                    return nodeToDelete;
                 } else {
                     this.first = nodeToDelete.next;
+                    return nodeToDelete;
                 }
-                return nodeToDelete;
             }
+            previous = currentNode;
+            currentNode = currentNode.next;
         }
         return null;
     }
