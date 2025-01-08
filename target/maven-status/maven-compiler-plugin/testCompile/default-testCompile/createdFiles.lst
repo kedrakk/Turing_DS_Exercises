@@ -2,14 +2,17 @@ com/turingds/dsexercise/datastructure/linkedlist/LinkedListIteratorTest.class
 com/turingds/dsexercise/search/LinearSearchTest.class
 com/turingds/dsexercise/search/BinarySearchTest.class
 com/turingds/dsexercise/datastructure/ReverseTest.class
+com/turingds/dsexercise/sorting/MergeSortTest.class
 com/turingds/dsexercise/datastructure/StackDSTest.class
 com/turingds/dsexercise/datastructure/DelimiterTest.class
 com/turingds/dsexercise/DsexerciseTest.class
 com/turingds/dsexercise/datastructure/QueueTest.class
 com/turingds/dsexercise/datastructure/CircularQueueTest.class
+com/turingds/dsexercise/recursion/FactorialTest.class
 com/turingds/dsexercise/sorting/SortingTest.class
 com/turingds/dsexercise/datastructure/linkedlist/SortedListTest.class
 com/turingds/dsexercise/datastructure/linkedlist/LinkedListTest.class
 com/turingds/dsexercise/tdd/CapitalTest.class
+com/turingds/dsexercise/search/RecursiveBinarySearchTest.class
 com/turingds/dsexercise/datastructure/PostfixConverterTest.class
 com/turingds/dsexercise/util/UtilsTest.class
