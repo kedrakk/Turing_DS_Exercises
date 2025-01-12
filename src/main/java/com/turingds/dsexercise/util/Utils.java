@@ -20,7 +20,7 @@ public class Utils {
         }
         return true;
     }
-    
+
     public int[] generateRadomArray(int size) {
         Random random = new Random();
         int[] arr = new int[size];
@@ -29,11 +29,14 @@ public class Utils {
         }
         return arr;
     }
-    
-    public String arrayToString(int[] arr){
-        StringBuffer stringbuffer=new StringBuffer();
+
+    public String arrayToString(int[] arr) {
+        StringBuffer stringbuffer = new StringBuffer();
         for (int i = 0; i < arr.length; i++) {
-            stringbuffer.append(", ").append(arr[i]);
+            stringbuffer.append(arr[i]);
+            if (i < arr.length - 1) {
+                stringbuffer.append(", ");
+            }
         }
         return stringbuffer.toString();
     }

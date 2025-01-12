@@ -48,6 +48,8 @@ class MergeSort {
             for (int i = 0; i < arr2.length; i++) {
                 arr2[i] = arr[k++];
             }
+            arr1 = this.sort(arr1);
+            arr2 = this.sort(arr2);
             int[] result = this.merge(arr1, arr2);
             return result;
         }

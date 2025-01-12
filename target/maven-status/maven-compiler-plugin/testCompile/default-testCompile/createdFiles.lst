@@ -16,3 +16,4 @@ com/turingds/dsexercise/tdd/CapitalTest.class
 com/turingds/dsexercise/search/RecursiveBinarySearchTest.class
 com/turingds/dsexercise/datastructure/PostfixConverterTest.class
 com/turingds/dsexercise/util/UtilsTest.class
+com/turingds/dsexercise/sorting/MergeSortV2Test.class

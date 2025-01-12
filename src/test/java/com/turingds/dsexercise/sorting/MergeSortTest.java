@@ -54,4 +54,11 @@ public class MergeSortTest {
         int[] result = algo.sort(arr);
         assertTrue(utils.isArraySorted(result));
     }
+
+    @Test
+    public void testSortRandom() {
+        int[] arr = utils.generateRadomArray(20);
+        int[] result = algo.sort(arr);
+        assertTrue(utils.isArraySorted(result));
+    }
 }
