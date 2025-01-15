@@ -17,14 +17,15 @@ public class SortingTest {
     Utils utils = new Utils();
 //    SortingAlgorithm sortingAlgo = new BubbleSorting();
 //    SortingAlgorithm sortingAlgo = new SelectionSorting();
-    SortingAlgorithm sortingAlgo = new InsertionSorting();
+//    SortingAlgorithm sortingAlgo = new InsertionSorting();
+    SortingAlgorithm sortingAlgo = new ShellSorting();
 
     @Test
     public void testSort() {
 
         int[] arr = {3, 2, 1};
         sortingAlgo.sort(arr);
-
+        System.out.println(utils.arrayToString(arr));
         assertTrue(utils.isArraySorted(arr));
     }
 

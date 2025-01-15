@@ -1,6 +1,7 @@
 com/turingds/dsexercise/datastructure/linkedlist/LinkedListIteratorTest.class
 com/turingds/dsexercise/search/LinearSearchTest.class
 com/turingds/dsexercise/search/BinarySearchTest.class
+com/turingds/dsexercise/sorting/TestPartition.class
 com/turingds/dsexercise/datastructure/ReverseTest.class
 com/turingds/dsexercise/sorting/MergeSortTest.class
 com/turingds/dsexercise/datastructure/StackDSTest.class

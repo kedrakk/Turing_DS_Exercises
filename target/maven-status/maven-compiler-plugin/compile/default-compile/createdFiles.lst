@@ -1,3 +1,4 @@
+com/turingds/dsexercise/sorting/QuickSort.class
 com/turingds/dsexercise/recursion/Factorial.class
 com/turingds/dsexercise/sorting/MergeSortV2.class
 com/turingds/dsexercise/datastructure/linkedlist/Node.class
@@ -14,6 +15,7 @@ com/turingds/dsexercise/datastructure/linkedlist/LinkedList$ListIterator.class
 com/turingds/dsexercise/datastructure/linkedlist/LinkedList.class
 com/turingds/dsexercise/search/LinearSearch.class
 com/turingds/dsexercise/datastructure/StackByLinkedList.class
+com/turingds/dsexercise/sorting/ShellSorting.class
 com/turingds/dsexercise/sorting/SortingAlgorithm.class
 com/turingds/dsexercise/datastructure/PostfixConverter.class
 com/turingds/dsexercise/sorting/InsertionSorting.class
