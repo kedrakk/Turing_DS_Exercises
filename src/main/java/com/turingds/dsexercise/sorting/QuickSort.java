@@ -11,31 +11,52 @@ package com.turingds.dsexercise.sorting;
 class QuickSort {
 
     public int findPivot(int[] arr) {
-        int tmpPivotIndex = 0;
-        int leftIndex = tmpPivotIndex + 1;
-        int rightIndex = arr.length - 1;
-
-        while (leftIndex < rightIndex) {
-            while (leftIndex < arr.length - 1 && arr[leftIndex] < arr[tmpPivotIndex]) {
-                leftIndex++;
-            }
-            while (rightIndex > tmpPivotIndex + 1 && arr[rightIndex] > arr[tmpPivotIndex]) {
-                rightIndex--;
-            }
-            int tmp = arr[leftIndex];
-            arr[leftIndex] = arr[rightIndex];
-            arr[rightIndex] = tmp;
-        }
-
-        if (arr[tmpPivotIndex] > arr[leftIndex]) {
-            int tmp = arr[leftIndex];
-            arr[leftIndex] = arr[tmpPivotIndex];
-            arr[tmpPivotIndex] = tmp;
-
-            return leftIndex;
-        }
-
-        return tmpPivotIndex;
+        return this.findPivotInArr(arr, 0, arr.length - 1);
     }
 
+    private int findPivotInArr(int[] arr, int start, int end) {
+//        int pivot = arr[end];
+//        int pivotIndex = start;
+//
+//        for (int i = start; i < end - 1; i++) {
+//            if (arr[i] <= pivot) {
+//                int tmp = arr[i];
+//                arr[i] = arr[pivotIndex];
+//                arr[pivotIndex] = tmp;
+//                pivotIndex++;
+//            }
+//        }
+//
+//        int tmp = arr[pivotIndex];
+//        arr[pivotIndex] = arr[end];
+//        arr[end] = tmp;
+//        return pivotIndex;
+
+        int pivot = arr[end];
+        int pivotIndex = start;
+
+        for (int i = start; i < end; i++) {
+            if (arr[i] < pivot) {
+                int tmp = arr[pivotIndex];
+                arr[pivotIndex] = arr[i];
+                arr[i] = tmp;
+                pivotIndex++;
+            }
+        }
+
+        int tmp = arr[end];
+        arr[end] = arr[pivotIndex];
+        arr[pivotIndex] = tmp;
+        return pivotIndex;
+    }
+
+    public void sort(int[] arr, int start, int end) {
+        if (start >= end || start < 0) {
+            return;
+        } else {
+            int pivotIndex = this.findPivotInArr(arr, start, end);
+            sort(arr, start, pivotIndex - 1);
+            sort(arr, pivotIndex + 1, end);
+        }
+    }
 }

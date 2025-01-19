@@ -12,12 +12,12 @@ import org.junit.jupiter.api.Test;
  *
  * @author kedk
  */
-public class TestPartition {
+public class QuickSortTest {
 
     QuickSort algo = new QuickSort();
     Utils utils = new Utils();
 
-   // @Test
+    //@Test
     public void testPartition() {
         int[] arr = {9, 8, 3, 7, 5, 6, 4, 1};
         int pivotIndex = algo.findPivot(arr);
@@ -37,15 +37,33 @@ public class TestPartition {
         System.out.println("Partitioned: " + utils.arrayToString(arr));
     }
 
-    @Test
+    // @Test
     public void testRandomPartition() {
-        int[] arr = utils.generateRadomArray(20);
+        int[] arr = utils.generateRadomArray(30);
         System.out.println("Original: " + utils.arrayToString(arr));
 
         int pivotIndex = algo.findPivot(arr);
         System.out.println("Sorted: " + utils.arrayToString(arr));
 
         assertPivotIsCorrect(arr, pivotIndex);
+    }
+
+    @Test
+    public void testBasicQuickSort() {
+        int[] arr = {97, 106, 119, 250, 111};
+        System.out.println("Original: " + utils.arrayToString(arr));
+        algo.sort(arr, 0, arr.length - 1);
+        System.out.println("Sorted: " + utils.arrayToString(arr));
+        assertTrue(utils.isArraySorted(arr));
+    }
+
+    @Test
+    public void testQuickSort() {
+        int[] arr = utils.generateRadomArray(8);
+        System.out.println("Original: " + utils.arrayToString(arr));
+        algo.sort(arr, 0, arr.length - 1);
+        System.out.println("Sorted: " + utils.arrayToString(arr));
+        assertTrue(utils.isArraySorted(arr));
     }
 
 }

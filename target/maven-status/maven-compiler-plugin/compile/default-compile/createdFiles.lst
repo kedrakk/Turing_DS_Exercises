@@ -14,6 +14,7 @@ com/turingds/dsexercise/datastructure/Queue.class
 com/turingds/dsexercise/datastructure/linkedlist/LinkedList$ListIterator.class
 com/turingds/dsexercise/datastructure/linkedlist/LinkedList.class
 com/turingds/dsexercise/search/LinearSearch.class
+com/turingds/dsexercise/sorting/RadixSort.class
 com/turingds/dsexercise/datastructure/StackByLinkedList.class
 com/turingds/dsexercise/sorting/ShellSorting.class
 com/turingds/dsexercise/sorting/SortingAlgorithm.class

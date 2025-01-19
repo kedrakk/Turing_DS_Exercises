@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.turingds.dsexercise.sorting.TestPartition" time="0.055" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.turingds.dsexercise.sorting.TestPartition" time="0.118" tests="1" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/Applications/Apache NetBeans.app/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/kedk/NetBeansProjects/dsexercise/target/surefire/surefirebooter-20250115134942781_3.jar /Users/kedk/NetBeansProjects/dsexercise/target/surefire 2025-01-15T13-49-42_702-jvmRun1 surefire-20250115134942781_1tmp surefire_0-20250115134942781_2tmp"/>
+    <property name="sun.java.command" value="/Users/kedk/NetBeansProjects/dsexercise/target/surefire/surefirebooter-20250119154934018_3.jar /Users/kedk/NetBeansProjects/dsexercise/target/surefire 2025-01-19T15-49-33_940-jvmRun1 surefire-20250119154934018_1tmp surefire_0-20250119154934018_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="com.turingds.dsexercise.sorting.TestPartition"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/kedk/NetBeansProjects/dsexercise/target/surefire/surefirebooter-20250115134942781_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/kedk/NetBeansProjects/dsexercise/target/surefire/surefirebooter-20250119154934018_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="23.0.1+11"/>
@@ -60,23 +60,6774 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="testRandomPartition" classname="com.turingds.dsexercise.sorting.TestPartition" time="0.033">
-    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
-	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
-	at com.turingds.dsexercise.sorting.TestPartition.assertPivotIsCorrect(TestPartition.java:32)
-	at com.turingds.dsexercise.sorting.TestPartition.testRandomPartition(TestPartition.java:48)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-]]></failure>
-    <system-out><![CDATA[Original: 12, 365, 7, 121, 215, 123, 135, 257, 319, 302, 329, 19, 54, 382, 9, 25, 307, 2, 103, 225
-Sorted: 9, 2, 7, 215, 12, 123, 135, 257, 319, 302, 329, 19, 54, 382, 121, 25, 307, 365, 103, 225
-Pivot Index: 4 and pivot value: 12
+  <testcase name="testQuickSort" classname="com.turingds.dsexercise.sorting.TestPartition" time="0.088">
+    <error type="java.lang.StackOverflowError"><![CDATA[java.lang.StackOverflowError
+	at java.base/java.nio.StringCharBuffer.<init>(StringCharBuffer.java:38)
+	at java.base/java.nio.CharBuffer.wrap(CharBuffer.java:548)
+	at java.base/java.nio.CharBuffer.wrap(CharBuffer.java:569)
+	at org.apache.maven.surefire.api.stream.AbstractStreamEncoder.encodeString(AbstractStreamEncoder.java:118)
+	at org.apache.maven.surefire.api.stream.AbstractStreamEncoder.encodeStringData(AbstractStreamEncoder.java:156)
+	at org.apache.maven.surefire.api.stream.AbstractStreamEncoder.encode(AbstractStreamEncoder.java:145)
+	at org.apache.maven.surefire.booter.spi.EventChannelEncoder.encodeMessage(EventChannelEncoder.java:378)
+	at org.apache.maven.surefire.booter.spi.EventChannelEncoder.setOutErr(EventChannelEncoder.java:172)
+	at org.apache.maven.surefire.booter.spi.EventChannelEncoder.testOutput(EventChannelEncoder.java:168)
+	at org.apache.maven.surefire.api.booter.ForkingRunListener.writeTestOutput(ForkingRunListener.java:99)
+	at org.apache.maven.surefire.api.booter.ForkingRunListener.writeTestOutput(ForkingRunListener.java:43)
+	at org.apache.maven.surefire.junitplatform.RunListenerAdapter.writeTestOutput(RunListenerAdapter.java:394)
+	at org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream.println(ConsoleOutputCapture.java:116)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:62)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+	at com.turingds.dsexercise.sorting.QuickSort.sortArray(QuickSort.java:63)
+]]></error>
+    <system-out><![CDATA[Pivot:3
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
+Pivot:4
 ]]></system-out>
   </testcase>
 </testsuite>
