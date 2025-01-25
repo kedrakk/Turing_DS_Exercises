@@ -6,11 +6,13 @@ com/turingds/dsexercise/sorting/SelectionSorting.class
 com/turingds/dsexercise/datastructure/Stack.class
 com/turingds/dsexercise/datastructure/CircularQueue.class
 com/turingds/dsexercise/datastructure/Reverser.class
+com/turingds/dsexercise/datastructure/tree/binary/Node.class
 com/turingds/dsexercise/search/BinarySearchAlgorithm.class
 com/turingds/dsexercise/searching/SearchAlgorithm.class
 com/turingds/dsexercise/Dsexercise.class
 com/turingds/dsexercise/util/Utils.class
 com/turingds/dsexercise/datastructure/Queue.class
+com/turingds/dsexercise/datastructure/tree/binary/BinaryTree.class
 com/turingds/dsexercise/datastructure/linkedlist/LinkedList$ListIterator.class
 com/turingds/dsexercise/datastructure/linkedlist/LinkedList.class
 com/turingds/dsexercise/search/LinearSearch.class

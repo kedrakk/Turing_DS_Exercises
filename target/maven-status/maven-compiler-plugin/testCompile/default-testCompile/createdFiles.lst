@@ -3,6 +3,7 @@ com/turingds/dsexercise/sorting/QuickSortTest.class
 com/turingds/dsexercise/search/LinearSearchTest.class
 com/turingds/dsexercise/search/BinarySearchTest.class
 com/turingds/dsexercise/datastructure/ReverseTest.class
+com/turingds/dsexercise/datastructure/tree/binary/BinaryTreeTest.class
 com/turingds/dsexercise/sorting/MergeSortTest.class
 com/turingds/dsexercise/datastructure/StackDSTest.class
 com/turingds/dsexercise/datastructure/DelimiterTest.class
