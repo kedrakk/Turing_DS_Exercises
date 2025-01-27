@@ -10,6 +10,8 @@ com/turingds/dsexercise/datastructure/DelimiterTest.class
 com/turingds/dsexercise/DsexerciseTest.class
 com/turingds/dsexercise/datastructure/QueueTest.class
 com/turingds/dsexercise/datastructure/CircularQueueTest.class
+com/turingds/dsexercise/datastructure/tree/binary/BinaryTreeTraversalTest.class
+com/turingds/dsexercise/datastructure/tree/binary/BinaryTreeInsertTest.class
 com/turingds/dsexercise/recursion/FactorialTest.class
 com/turingds/dsexercise/sorting/SortingTest.class
 com/turingds/dsexercise/datastructure/linkedlist/SortedListTest.class

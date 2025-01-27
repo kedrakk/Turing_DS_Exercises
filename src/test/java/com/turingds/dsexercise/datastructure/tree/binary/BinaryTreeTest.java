@@ -14,12 +14,15 @@ import org.junit.jupiter.api.Test;
 public class BinaryTreeTest {
 
     BinaryTree getBinaryTree() {
-        Node root = new Node(7);
-        Node leftChild = new Node(6);
-        Node rightChild = new Node(8);
+        Node root = new Node(17);
+        Node firstleftChild = new Node(13);
+        Node rightChild = new Node(18);
 
-        root.setLeftChild(leftChild);
+        root.setLeftChild(firstleftChild);
         root.setRightChild(rightChild);
+        
+        firstleftChild.setLeftChild(new Node(10));
+        firstleftChild.setRightChild(new Node(15));
 
         BinaryTree binaryTree = new BinaryTree(root);
         return binaryTree;
@@ -30,36 +33,43 @@ public class BinaryTreeTest {
 
         BinaryTree binaryTree = getBinaryTree();
 
-        assertEquals(7, binaryTree.root.getValue());
-        assertEquals(6, binaryTree.root.getLeftChild().getValue());
-        assertEquals(8, binaryTree.root.getRightChild().getValue());
+        assertEquals(17, binaryTree.root.getValue());
+        assertEquals(13, binaryTree.root.getLeftChild().getValue());
+        assertEquals(18, binaryTree.root.getRightChild().getValue());
     }
 
     @Test
     public void testSearchRootItem() {
         BinaryTree binaryTree = getBinaryTree();
-        Node item = binaryTree.search(7);
-        assertEquals(7, item.getValue());
+        Node item = binaryTree.search(17);
+        assertEquals(17, item.getValue());
     }
 
     @Test
     public void testSearchLeftItem() {
         BinaryTree binaryTree = getBinaryTree();
-        Node item1 = binaryTree.search(6);
-        assertEquals(6, item1.getValue());
+        Node item1 = binaryTree.search(13);
+        assertEquals(13, item1.getValue());
     }
 
     @Test
     public void testSearchRightItem() {
         BinaryTree binaryTree = getBinaryTree();
-        Node item2 = binaryTree.search(8);
-        assertEquals(8, item2.getValue());
+        Node item2 = binaryTree.search(18);
+        assertEquals(18, item2.getValue());
+    }
+    
+    @Test
+    public void testSearchSecondLevelLeftChild() {
+        BinaryTree binaryTree = getBinaryTree();
+        Node item2 = binaryTree.search(15);
+        assertEquals(15, item2.getValue());
     }
 
     @Test
     public void testSearchNonExistingItem() {
         BinaryTree binaryTree = getBinaryTree();
-        Node item = binaryTree.search(3);
+        Node item = binaryTree.search(16);
         assertEquals(null, item);
     }
 }

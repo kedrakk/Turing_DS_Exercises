@@ -11,6 +11,7 @@ package com.turingds.dsexercise.datastructure.tree.binary;
 public class Node {
 
     private int value;
+    private Node parent;
     private Node leftChild;
     private Node rightChild;
 
@@ -43,6 +44,7 @@ public class Node {
      * @param leftChild the leftChild to set
      */
     public void setLeftChild(Node leftChild) {
+        leftChild.setParent(this);
         this.leftChild = leftChild;
     }
 
@@ -57,8 +59,21 @@ public class Node {
      * @param rightChild the rightChild to set
      */
     public void setRightChild(Node rightChild) {
+        rightChild.setParent(this);
         this.rightChild = rightChild;
     }
-    
-    
+
+    /**
+     * @return the parent
+     */
+    public Node getParent() {
+        return parent;
+    }
+
+    /**
+     * @param parent the parent to set
+     */
+    public void setParent(Node parent) {
+        this.parent = parent;
+    }
 }
