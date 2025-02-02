@@ -76,4 +76,8 @@ public class Node {
     public void setParent(Node parent) {
         this.parent = parent;
     }
+
+    public boolean isSubTree() {
+        return this.getLeftChild() != null || this.getRightChild() != null;
+    }
 }

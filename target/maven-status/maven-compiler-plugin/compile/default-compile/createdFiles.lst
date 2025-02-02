@@ -15,8 +15,10 @@ com/turingds/dsexercise/util/Utils.class
 com/turingds/dsexercise/datastructure/Queue.class
 com/turingds/dsexercise/datastructure/tree/binary/PreorderTraversal.class
 com/turingds/dsexercise/datastructure/tree/binary/BinaryTree.class
+com/turingds/dsexercise/datastructure/tree/binary/PreorderTraversalWithLoop$TreeIterator.class
 com/turingds/dsexercise/datastructure/linkedlist/LinkedList$ListIterator.class
 com/turingds/dsexercise/datastructure/linkedlist/LinkedList.class
+com/turingds/dsexercise/datastructure/tree/binary/PreorderTraversalWithLoop.class
 com/turingds/dsexercise/datastructure/tree/binary/InorderTraversal.class
 com/turingds/dsexercise/search/LinearSearch.class
 com/turingds/dsexercise/sorting/RadixSort.class
@@ -33,6 +35,8 @@ com/turingds/dsexercise/datastructure/Delimiter.class
 com/turingds/dsexercise/datastructure/tree/binary/InorderTraversal$TreeIterator.class
 com/turingds/dsexercise/datastructure/QueueByLinkedList.class
 com/turingds/dsexercise/sorting/MergeSort.class
+com/turingds/dsexercise/datastructure/tree/binary/InorderTraversalImperative.class
+com/turingds/dsexercise/datastructure/tree/binary/InorderTraversalImperative$TreeIterator.class
 com/turingds/dsexercise/datastructure/linkedlist/SortedList.class
 com/turingds/dsexercise/datastructure/tree/binary/PostorderTraversal.class
 com/turingds/dsexercise/sorting/BubbleSorting.class

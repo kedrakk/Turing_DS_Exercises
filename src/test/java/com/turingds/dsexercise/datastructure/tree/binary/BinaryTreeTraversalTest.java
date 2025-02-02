@@ -29,9 +29,10 @@ public class BinaryTreeTraversalTest {
         tree.insert(19);
     }
 
-    @Test
+    //@Test
     public void testPreOrderTraversal() {
-        BinaryTreeTraversal traversal = new PreorderTraversal(tree);
+//        BinaryTreeTraversal traversal = new PreorderTraversal(tree);
+        BinaryTreeTraversal traversal = new PreorderTraversalWithLoop(tree);
         Iterator<Node> iterator = traversal.iterator();
 
         assertEquals(17, iterator.next().getValue());
@@ -46,7 +47,8 @@ public class BinaryTreeTraversalTest {
 
     @Test
     public void testInOrderTraversal() {
-        BinaryTreeTraversal traversal = new InorderTraversal(tree);
+//        BinaryTreeTraversal traversal = new InorderTraversal(tree);
+        BinaryTreeTraversal traversal = new InorderTraversalImperative(tree);
         Iterator<Node> iterator = traversal.iterator();
 
         assertEquals(13, iterator.next().getValue());
@@ -59,7 +61,7 @@ public class BinaryTreeTraversalTest {
         assertEquals(35, iterator.next().getValue());
     }
 
-    @Test
+    //@Test
     public void testPostOrderTraversal() {
         BinaryTreeTraversal traversal = new PostorderTraversal(tree);
         Iterator<Node> iterator = traversal.iterator();

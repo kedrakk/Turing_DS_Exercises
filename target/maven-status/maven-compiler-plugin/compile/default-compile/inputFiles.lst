@@ -14,9 +14,11 @@
 /Users/kedk/NetBeansProjects/dsexercise/src/main/java/com/turingds/dsexercise/datastructure/tree/binary/BinaryTree.java
 /Users/kedk/NetBeansProjects/dsexercise/src/main/java/com/turingds/dsexercise/datastructure/tree/binary/BinaryTreeTraversal.java
 /Users/kedk/NetBeansProjects/dsexercise/src/main/java/com/turingds/dsexercise/datastructure/tree/binary/InorderTraversal.java
+/Users/kedk/NetBeansProjects/dsexercise/src/main/java/com/turingds/dsexercise/datastructure/tree/binary/InorderTraversalImperative.java
 /Users/kedk/NetBeansProjects/dsexercise/src/main/java/com/turingds/dsexercise/datastructure/tree/binary/Node.java
 /Users/kedk/NetBeansProjects/dsexercise/src/main/java/com/turingds/dsexercise/datastructure/tree/binary/PostorderTraversal.java
 /Users/kedk/NetBeansProjects/dsexercise/src/main/java/com/turingds/dsexercise/datastructure/tree/binary/PreorderTraversal.java
+/Users/kedk/NetBeansProjects/dsexercise/src/main/java/com/turingds/dsexercise/datastructure/tree/binary/PreorderTraversalWithLoop.java
 /Users/kedk/NetBeansProjects/dsexercise/src/main/java/com/turingds/dsexercise/recursion/Factorial.java
 /Users/kedk/NetBeansProjects/dsexercise/src/main/java/com/turingds/dsexercise/search/BinarySearchAlgorithm.java
 /Users/kedk/NetBeansProjects/dsexercise/src/main/java/com/turingds/dsexercise/search/LinearSearch.java
