@@ -12,12 +12,12 @@ import java.util.Stack;
  *
  * @author kedk
  */
-public class InorderTraversalImperative implements BinaryTreeTraversal {
+public class InorderTraversalIterative implements BinaryTreeTraversal {
 
     BinaryTree tree;
     ArrayList<Node> arrayList;
 
-    public InorderTraversalImperative(BinaryTree tree) {
+    public InorderTraversalIterative(BinaryTree tree) {
         this.tree = tree;
     }
 
