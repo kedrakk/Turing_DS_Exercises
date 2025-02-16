@@ -22,4 +22,5 @@ com/turingds/dsexercise/sorting/SortingTest.class
 com/turingds/dsexercise/datastructure/linkedlist/LinkedListTest.class
 com/turingds/dsexercise/search/RecursiveBinarySearchTest.class
 com/turingds/dsexercise/datastructure/PostfixConverterTest.class
+com/turingds/dsexercise/datastructure/tree/binary/BinaryTreeDeletionTest.class
 com/turingds/dsexercise/util/UtilsTest.class

@@ -90,7 +90,7 @@ public class InorderTraversalIterative implements BinaryTreeTraversal {
 
         @Override
         public boolean hasNext() {
-            return currentIndex <= arrayList.size();
+            return currentIndex <= arrayList.size() - 1;
         }
 
         @Override

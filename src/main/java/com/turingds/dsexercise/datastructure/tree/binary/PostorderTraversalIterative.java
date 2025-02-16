@@ -31,103 +31,65 @@ public class PostorderTraversalIterative implements BinaryTreeTraversal {
         this.traversePostOrderAction(current);
     }
 
-//    void traversePostOrderAction(Node node) {
-//        Stack<Node> stack = new Stack<>();
-//        ArrayList<Node> visited = new ArrayList<Node>();
-//        Node current = node;
+    void traversePostOrderAction(Node node) {
+        Node current = node;
+        Stack<Node> recursiveStack = new Stack<>();
+        Stack<Node> reverseStack = new Stack<>();
+
+        recursiveStack.add(current);
+        while (!recursiveStack.empty()) {
+            Node item = recursiveStack.pop();
+            reverseStack.push(item);
+
+            if (item.getLeftChild() != null) {
+                recursiveStack.push(item.getLeftChild());
+            }
+            if (item.getRightChild() != null) {
+                recursiveStack.push(item.getRightChild());
+            }
+        }
+
+        while (!reverseStack.empty()) {
+            this.arrayList.add(reverseStack.pop());
+        }
+
+//        ArrayList<Node> visited = new ArrayList<>();
 //        while (current != null) {
+//
 //            while (current.getLeftChild() != null) {
-//                System.out.println("push " + current.getValue());
-//                stack.push(current);
+//                recursiveStack.push(current);
 //                current = current.getLeftChild();
 //            }
-//            if (current.getRightChild() != null) {
-//                System.out.println("Right child case");
-//            }
-//            System.out.println("Node " + current.getValue());
-//            arrayList.add(current);
 //
-//            if (!stack.empty())//left deadend or right deadend
-//            {
-//                Node backtrackNode = stack.pop();
+//            this.arrayList.add(current);
 //
-//                if (!visited.contains(backtrackNode)) {
-//                    System.out.println("Not visited, push " + backtrackNode.getValue());
-//                    stack.push(backtrackNode);
-//                    visited.add(backtrackNode);
-//                } else //process root
-//                {
-//                    arrayList.add(backtrackNode);
-//                    System.out.println("Backtrack node");
-//                    System.out.println("Node " + backtrackNode.getValue());
-//                    if (!stack.empty()) {
-//                        current = stack.pop();
+//            if (!recursiveStack.isEmpty()) {
+//                Node backTrack = recursiveStack.pop();
+//
+//                if (!visited.contains(backTrack)) {
+//                    recursiveStack.push(backTrack);
+//                    visited.add(backTrack);
+//                } else {
+//                    this.arrayList.add(backTrack);
+//                    if (!recursiveStack.empty()) {
+//                        current = recursiveStack.pop();
 //                        continue;
 //                    } else {
 //                        break;
 //                    }
-//
 //                }
 //
-//                if (backtrackNode.getRightChild() != null) {
-//
-//                    System.out.println("Go to right child of " + backtrackNode.getValue());
-//
-//                    current = backtrackNode.getRightChild();
-//                    visited.add(backtrackNode.getRightChild());
-//                } else //no right child process root
-//                {
-//                    System.out.println("This case " + backtrackNode.getValue());
-//                    //current = backtrackNode;
-//                    System.out.println("Node " + backtrackNode.getValue());
-//                    arrayList.add(backtrackNode);
+//                if (backTrack.getRightChild() != null) {
+//                    current = backTrack.getRightChild();
+//                    visited.add(backTrack.getRightChild());
+//                }else{
+//                    this.arrayList.add(backTrack);
 //                    break;
 //                }
 //            } else {
 //                break;
 //            }
 //        }
-
-    void traversePostOrderAction(Node node) {
-        Node current = node;
-        Stack<Node> stack = new Stack<>();
-        ArrayList<Node> visited = new ArrayList<>();
-        while (current != null) {
-
-            while (current.getLeftChild() != null) {
-                stack.push(current);
-                current = current.getLeftChild();
-            }
-
-            this.arrayList.add(current);
-
-            if (!stack.isEmpty()) {
-                Node backTrack = stack.pop();
-
-                if (!visited.contains(backTrack)) {
-                    stack.push(backTrack);
-                    visited.add(backTrack);
-                } else {
-                    this.arrayList.add(backTrack);
-                    if (!stack.empty()) {
-                        current = stack.pop();
-                        continue;
-                    } else {
-                        break;
-                    }
-                }
-
-                if (backTrack.getRightChild() != null) {
-                    current = backTrack.getRightChild();
-                    visited.add(backTrack.getRightChild());
-                }else{
-                    this.arrayList.add(backTrack);
-                    break;
-                }
-            } else {
-                break;
-            }
-        }
     }
 
     class TreeIterator implements Iterator<Node> {

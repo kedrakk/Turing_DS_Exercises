@@ -61,9 +61,9 @@ public class BinaryTreeTraversalTest {
         assertEquals(35, iterator.next().getValue());
     }
 
-    //@Test
+    @Test
     public void testPostOrderTraversal() {
-        BinaryTreeTraversal traversal = new PostorderTraversal(tree);
+        BinaryTreeTraversal traversal = new PostorderTraversalIterative(tree);
         Iterator<Node> iterator = traversal.iterator();
 
         assertEquals(13, iterator.next().getValue());
@@ -74,5 +74,17 @@ public class BinaryTreeTraversalTest {
         assertEquals(35, iterator.next().getValue());
         assertEquals(30, iterator.next().getValue());
         assertEquals(17, iterator.next().getValue());
+    }
+
+    @Test
+    public void getMinNode() {
+        Node minNode = tree.getMinNode();
+        assertEquals(13, minNode.getValue());
+    }
+
+    @Test
+    public void getMaxNode() {
+        Node minNode = tree.getMaxNode();
+        assertEquals(35, minNode.getValue());
     }
 }

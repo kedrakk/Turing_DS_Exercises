@@ -12,8 +12,8 @@ public class Node {
 
     private int value;
     private Node parent;
-    private Node leftChild;
-    private Node rightChild;
+    protected Node leftChild;
+    protected Node rightChild;
 
     public Node(int value) {
         this.value = value;
@@ -79,5 +79,13 @@ public class Node {
 
     public boolean isSubTree() {
         return this.getLeftChild() != null || this.getRightChild() != null;
+    }
+
+    public boolean isLeaf() {
+        return this.getLeftChild() == null && this.getRightChild() == null;
+    }
+
+    public boolean isOnlyOneChild() {
+        return (this.getLeftChild() == null && this.getRightChild() != null) || this.getLeftChild() != null && this.getRightChild() == null;
     }
 }

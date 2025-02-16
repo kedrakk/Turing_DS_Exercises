@@ -11,7 +11,7 @@ import java.util.Iterator;
  *
  * @author kedk
  */
-public class InorderTraversal implements BinaryTreeTraversal{
+public class InorderTraversal implements BinaryTreeTraversal {
 
     BinaryTree tree;
     ArrayList<Node> arrayList;
@@ -54,7 +54,7 @@ public class InorderTraversal implements BinaryTreeTraversal{
 
         @Override
         public boolean hasNext() {
-            return currentIndex <= arrayList.size();
+            return currentIndex <= arrayList.size() - 1;
         }
 
         @Override
@@ -63,5 +63,5 @@ public class InorderTraversal implements BinaryTreeTraversal{
         }
 
     }
-    
+
 }

@@ -38,6 +38,7 @@ com/turingds/dsexercise/datastructure/tree/binary/InorderTraversalIterative$Tree
 com/turingds/dsexercise/datastructure/QueueByLinkedList.class
 com/turingds/dsexercise/datastructure/tree/binary/InorderTraversalIterative.class
 com/turingds/dsexercise/sorting/MergeSort.class
+com/turingds/dsexercise/util/TreeUtils.class
 com/turingds/dsexercise/datastructure/tree/binary/PreorderTraversalIterative$TreeIterator.class
 com/turingds/dsexercise/datastructure/linkedlist/SortedList.class
 com/turingds/dsexercise/datastructure/tree/binary/PostorderTraversal.class
