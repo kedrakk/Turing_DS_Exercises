@@ -103,27 +103,69 @@ public class BinaryTree {
     public Node deleteNode(int i) {
         Node nodeToDelete = this.search(i);
         if (nodeToDelete.isLeaf()) {
-            Node parent = nodeToDelete.getParent();
-            if (parent.getLeftChild() == nodeToDelete) {
-                parent.leftChild = null;
-            }
-            if (parent.getRightChild() == nodeToDelete) {
-                parent.rightChild = null;
-            }
+            deleteLeaf(nodeToDelete);
         } else if (nodeToDelete.isOnlyOneChild()) {
             if (nodeToDelete.getParent() == null)//root
             {
-                if (nodeToDelete.getLeftChild() != null) {
-                    this.root = nodeToDelete.getLeftChild();
-                }
-                if (nodeToDelete.getRightChild() != null) {
-                    this.root = nodeToDelete.getRightChild();
-                }
+                deleteRoot(nodeToDelete);
             } else {
-                //TODO delete non-root
+                nodeToDelete = deleteNodeWithOnlyChild(nodeToDelete);
             }
+        } else {
+            nodeToDelete = deleteNodeWithSuccessor(nodeToDelete);
         }
         return nodeToDelete;
+    }
+
+    private Node deleteNodeWithSuccessor(Node nodeToDelete) {
+        Node nodeToReturn = new Node(nodeToDelete.getValue());
+        Node successor = this.getSuccessorOf(nodeToDelete.getValue());
+        int successorValue = successor.getValue();
+        this.deleteNode(successorValue);
+        nodeToDelete.setValue(successorValue);
+        nodeToDelete = nodeToReturn;
+        return nodeToDelete;
+    }
+
+    private Node deleteNodeWithOnlyChild(Node nodeToDelete) {
+        //delete non-root
+        if (nodeToDelete.leftChild != null) {
+            
+            Node nodeToReturn = new Node(nodeToDelete.getValue());
+            
+            nodeToDelete.setValue(nodeToDelete.leftChild.getValue());
+            nodeToDelete.leftChild = null;
+            
+            nodeToDelete = nodeToReturn;
+        } else if (nodeToDelete.rightChild != null) {
+            
+            Node nodeToReturn = new Node(nodeToDelete.getValue());
+            
+            nodeToDelete.setValue(nodeToDelete.rightChild.getValue());
+            nodeToDelete.rightChild = null;
+            
+            nodeToDelete = nodeToReturn;
+        }
+        return nodeToDelete;
+    }
+
+    private void deleteRoot(Node nodeToDelete) {
+        if (nodeToDelete.getLeftChild() != null) {
+            this.root = nodeToDelete.getLeftChild();
+        }
+        if (nodeToDelete.getRightChild() != null) {
+            this.root = nodeToDelete.getRightChild();
+        }
+    }
+
+    private void deleteLeaf(Node nodeToDelete) {
+        Node parent = nodeToDelete.getParent();
+        if (parent.getLeftChild() == nodeToDelete) {
+            parent.leftChild = null;
+        }
+        if (parent.getRightChild() == nodeToDelete) {
+            parent.rightChild = null;
+        }
     }
 
 }

@@ -13,6 +13,8 @@
 /Users/kedk/NetBeansProjects/dsexercise/src/test/java/com/turingds/dsexercise/datastructure/tree/binary/BinaryTreeTest.java
 /Users/kedk/NetBeansProjects/dsexercise/src/test/java/com/turingds/dsexercise/datastructure/tree/binary/BinaryTreeTraversalTest.java
 /Users/kedk/NetBeansProjects/dsexercise/src/test/java/com/turingds/dsexercise/datastructure/tree/binary/PostorderTraversalTest.java
+/Users/kedk/NetBeansProjects/dsexercise/src/test/java/com/turingds/dsexercise/datastructure/tree/binary/array/BinaryTreeWithArrayPreorderTest.java
+/Users/kedk/NetBeansProjects/dsexercise/src/test/java/com/turingds/dsexercise/datastructure/tree/binary/array/BinaryTreeWithArrayTest.java
 /Users/kedk/NetBeansProjects/dsexercise/src/test/java/com/turingds/dsexercise/recursion/FactorialTest.java
 /Users/kedk/NetBeansProjects/dsexercise/src/test/java/com/turingds/dsexercise/search/BinarySearchTest.java
 /Users/kedk/NetBeansProjects/dsexercise/src/test/java/com/turingds/dsexercise/search/LinearSearchTest.java

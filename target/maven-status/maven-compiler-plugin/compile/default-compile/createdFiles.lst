@@ -1,6 +1,7 @@
 com/turingds/dsexercise/sorting/QuickSort.class
 com/turingds/dsexercise/recursion/Factorial.class
 com/turingds/dsexercise/sorting/MergeSortV2.class
+com/turingds/dsexercise/datastructure/tree/binary/array/BinaryTreeWithArrayPreorderTraversal.class
 com/turingds/dsexercise/datastructure/linkedlist/Node.class
 com/turingds/dsexercise/sorting/SelectionSorting.class
 com/turingds/dsexercise/datastructure/Stack.class
@@ -22,11 +23,13 @@ com/turingds/dsexercise/search/LinearSearch.class
 com/turingds/dsexercise/datastructure/tree/binary/PostorderTraversalIterative$TreeIterator.class
 com/turingds/dsexercise/sorting/RadixSort.class
 com/turingds/dsexercise/datastructure/tree/binary/PreorderTraversal$TreeIterator.class
+com/turingds/dsexercise/datastructure/tree/binary/array/BinaryTreeWithArrayPreorderTraversal$TreeIterator.class
 com/turingds/dsexercise/datastructure/StackByLinkedList.class
 com/turingds/dsexercise/sorting/ShellSorting.class
 com/turingds/dsexercise/datastructure/tree/binary/PreorderTraversalIterative.class
 com/turingds/dsexercise/datastructure/tree/binary/PostorderTraversalIterative.class
 com/turingds/dsexercise/sorting/SortingAlgorithm.class
+com/turingds/dsexercise/datastructure/tree/binary/array/BinaryTreeWithArray.class
 com/turingds/dsexercise/datastructure/PostfixConverter.class
 com/turingds/dsexercise/sorting/InsertionSorting.class
 com/turingds/dsexercise/Capital.class

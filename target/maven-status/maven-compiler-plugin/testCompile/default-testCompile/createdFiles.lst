@@ -14,6 +14,7 @@ com/turingds/dsexercise/sorting/QuickSortTest.class
 com/turingds/dsexercise/search/BinarySearchTest.class
 com/turingds/dsexercise/datastructure/ReverseTest.class
 com/turingds/dsexercise/datastructure/tree/binary/BinaryTreeTest.class
+com/turingds/dsexercise/datastructure/tree/binary/array/BinaryTreeWithArrayPreorderTest.class
 com/turingds/dsexercise/sorting/MergeSortTest.class
 com/turingds/dsexercise/datastructure/StackDSTest.class
 com/turingds/dsexercise/datastructure/tree/binary/BinaryTreeTraversalTest.class
@@ -24,3 +25,4 @@ com/turingds/dsexercise/search/RecursiveBinarySearchTest.class
 com/turingds/dsexercise/datastructure/PostfixConverterTest.class
 com/turingds/dsexercise/datastructure/tree/binary/BinaryTreeDeletionTest.class
 com/turingds/dsexercise/util/UtilsTest.class
+com/turingds/dsexercise/datastructure/tree/binary/array/BinaryTreeWithArrayTest.class

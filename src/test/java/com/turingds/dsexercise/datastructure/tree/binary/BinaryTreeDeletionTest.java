@@ -77,4 +77,59 @@ public class BinaryTreeDeletionTest {
         Node searchDeletedNode = this.tree.search(17);
         assertEquals(null, searchDeletedNode);
     }
+    
+    @Test
+    public void testDeleteNonRootLeftOnlyChildCase() {
+        Node root = new Node(17);
+        tree = new BinaryTree(root);
+        tree.insert(15);
+        tree.insert(30);
+        tree.insert(13);
+
+        Node deletedNode = this.tree.deleteNode(15);
+        assertEquals(15, deletedNode.getValue());
+        assertTrue(TreeUtils.isBinarySearchTree(tree));
+
+        Node searchDeletedNode = this.tree.search(15);
+        assertEquals(null, searchDeletedNode);
+    }
+    
+    @Test
+    public void testDeleteNonRootRightOnlyChildCase() {
+        Node root = new Node(17);
+        tree = new BinaryTree(root);
+        tree.insert(15);
+        tree.insert(30);
+        tree.insert(13);
+        tree.insert(35);
+
+        Node deletedNode = this.tree.deleteNode(30);
+        assertEquals(30, deletedNode.getValue());
+        assertTrue(TreeUtils.isBinarySearchTree(tree));
+
+        Node searchDeletedNode = this.tree.search(30);
+        assertEquals(null, searchDeletedNode);
+    }
+    
+    @Test
+    public void testDeleteWithSuccessor() {
+
+        Node deletedNode = this.tree.deleteNode(17);
+        assertEquals(17, deletedNode.getValue());
+        assertTrue(TreeUtils.isBinarySearchTree(tree));
+
+        Node searchDeletedNode = this.tree.search(17);
+        assertEquals(null, searchDeletedNode);
+    }
+    
+    @Test
+    public void testDeleteWithSuccessor2() {
+
+        Node deletedNode = this.tree.deleteNode(15);
+        assertEquals(15, deletedNode.getValue());
+        assertTrue(TreeUtils.isBinarySearchTree(tree));
+
+        Node searchDeletedNode = this.tree.search(15);
+        assertEquals(null, searchDeletedNode);
+    }
 }
