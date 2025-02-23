@@ -12,12 +12,13 @@ public class TwoThreeFourTree {
 
     Node root;
 
-    protected void insert(int i) {
+    protected Node insert(int i) {
         if (root == null) {
             root = this.createTwoNodes(root, i);
+            return root;
         } else {
             Node node = this.root;
-            node.insert(i);
+            return node.insert(i);
         }
     }
 
