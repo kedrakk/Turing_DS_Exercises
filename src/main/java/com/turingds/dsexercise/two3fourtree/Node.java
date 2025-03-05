@@ -26,8 +26,9 @@ public class Node {
             Node splitParent = this.splitNode(this);
 
             //need to find leaf node to insert
+            return splitParent;
         }
-        return this;
+        //return this;
     }
 
     private Node simpleInsert(int item) {
@@ -51,8 +52,9 @@ public class Node {
         //simple split
         if (node.parent == null) {
             return splitWithNoParent(node);
+        } else {
+            return splitWithParent(node);
         }
-        return node;
     }
 
     private Node splitWithNoParent(Node node) {
@@ -70,6 +72,37 @@ public class Node {
 
         current.children.add(child0);
         current.children.add(child1);
+
+        return current;
+    }
+    
+    int getChildIndex(Node node) {
+        int childSize = node.parent.children.size();
+        for (int i = 0; i < childSize; i++) {
+            Node currentChild = node.parent.children.get(i);
+            if (currentChild == node) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    private Node splitWithParent(Node node) {
+        Node current = node.parent;
+        current.insert(node.keys[1]);
+
+        //spliting children
+        int childIndex = getChildIndex(node);
+        Node child0 = new Node();
+        child0.parent = current;
+        child0.insert(node.keys[0]);
+
+        Node child1 = new Node();
+        child1.parent = current;
+        child1.insert(node.keys[2]);
+        
+        current.children.add(childIndex, child1);
+        current.children.add(childIndex, child0);
 
         return current;
     }
@@ -92,13 +125,62 @@ public class Node {
         {
             return null;
         } else {
-            System.out.println("Index:" + index);
-            if (current.keys[index] == null) {
-                return current.children.get(index);
+//            if (current.keys[index] == null) {
+//                return current.children.get(index);
+//            } else {
+//                return current.children.get(index);
+//            }
+
+            Node node = current.children.get(index);
+            if (node != null) {
+                return node.search(item);
             } else {
-                return current.children.get(index);
+                return null;
             }
         }
-//        return current;
     }
+
+    Node searchForInsert(int item) {
+        Node current = this;
+        int index = 0;
+        while (index < current.keys.length && current.keys[index] != null) {
+            if (current.keys[index] == item) {
+                //found
+                return current;
+            }
+            if (current.keys[index] > item) {
+                break;
+            }
+            index++;
+        }
+
+        // go to deeper level
+        if (current.children.isEmpty()) //leaf alr
+        {
+            return current;
+        } else {
+
+            Node node = current.children.get(index);
+            if (node != null) {
+                return node.searchForInsert(item);
+            } else {
+                return null;
+            }
+        }
+    }
+
+    @Override
+    public String toString() {
+        String str = "[";
+        for (Integer key : keys) {
+            str += key + " ";
+        }
+        str += "]";
+        return str;
+    }
+
+    public Boolean isLeaf() {
+        return this.children.isEmpty();
+    }
+
 }

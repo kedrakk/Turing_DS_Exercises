@@ -17,8 +17,17 @@ public class TwoThreeFourTree {
             root = this.createTwoNodes(root, i);
             return root;
         } else {
-            Node node = this.root;
-            return node.insert(i);
+            Node node = this.root.searchForInsert(i);
+            if (node.noOfNode != 4) {
+                return node.insert(i);
+            } else { //split 
+                Node splitParent = node.splitNode(node);
+                if (node.parent == null) {
+                    this.root = splitParent;
+                }
+                node = this.root.searchForInsert(i);
+                return node.insert(i);
+            }
         }
     }
 

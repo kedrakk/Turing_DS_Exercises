@@ -1,12 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.turingds.dsexercise.two3fourtree.SearchTwoThreeFourTest
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.051 s <<< FAILURE! -- in com.turingds.dsexercise.two3fourtree.SearchTwoThreeFourTest
-com.turingds.dsexercise.two3fourtree.SearchTwoThreeFourTest.testSearchLevel1FourTree -- Time elapsed: 0.005 s <<< ERROR!
-java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
-	at com.turingds.dsexercise.two3fourtree.Node.search(Node.java:96)
-	at com.turingds.dsexercise.two3fourtree.SearchTwoThreeFourTest.testSearchLevel1FourTree(SearchTwoThreeFourTest.java:156)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s -- in com.turingds.dsexercise.two3fourtree.SearchTwoThreeFourTest

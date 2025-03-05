@@ -59,13 +59,31 @@ public class TwoThreeFourTest {
     }
 
     @Test
-    public void testSplitBaseCase() {
+    public void testSplitInsertBaseCase() {
         tree.insert(100);
         tree.insert(150);
         tree.insert(120);
         Node insertedNode = tree.insert(200);
+        Node parent = insertedNode.parent;
+        assertEquals(120, parent.keys[0]);
 
-        Node parent = insertedNode.splitNode(insertedNode);
+        Node child0 = parent.children.get(0);
+        assertEquals(100, child0.keys[0]);
+
+        Node child1 = parent.children.get(1);
+        assertEquals(150, child1.keys[0]);
+        assertEquals(200, child1.keys[1]);
+    }
+
+    @Test
+    public void testInsertSplitCaseAndChild1() {
+        tree.insert(100);
+        tree.insert(150);
+        tree.insert(120);
+        tree.insert(200);
+        Node insertedNode = tree.insert(201);
+
+        Node parent = insertedNode.parent;
         assertEquals(120, parent.keys[0]);
         assertEquals(2, parent.noOfNode);
         assertEquals(2, parent.children.size());
@@ -76,21 +94,30 @@ public class TwoThreeFourTest {
         Node child1 = parent.children.get(1);
         assertEquals(150, child1.keys[0]);
         assertEquals(200, child1.keys[1]);
+        assertEquals(201, child1.keys[2]);
     }
+    
+    @Test
+    public void testInsertSplitCaseAndChild2() {
+        tree.insert(100);
+        tree.insert(150);
+        tree.insert(120);
+        tree.insert(200);
+        tree.insert(201);
+        Node insertedNode = tree.insert(202);
 
-//    @Test
-//    public void testSplitInsertBaseCase() {
-//        tree.insert(100);
-//        tree.insert(150);
-//        tree.insert(120);
-//        Node insertedNode = tree.insert(200);
-//        assertEquals(120, insertedNode.parent);
-//
-//        Node child0 = insertedNode.children.get(0);
-//        assertEquals(100, child0.keys[0]);
-//
-//        Node child1 = insertedNode.children.get(1);
-//        assertEquals(150, child1.keys[0]);
-//        assertEquals(200, child1.keys[1]);
-//    }
+        Node parent = insertedNode.parent;
+        assertEquals(120, parent.keys[0]);
+        assertEquals(200, parent.keys[1]);
+
+        Node child0 = parent.children.get(0);
+        assertEquals(100, child0.keys[0]);
+
+        Node child1 = parent.children.get(1);
+        assertEquals(150, child1.keys[0]);
+
+        Node child2 = parent.children.get(2);
+        assertEquals(201, child2.keys[0]);
+        assertEquals(202, child2.keys[1]);
+    }
 }
