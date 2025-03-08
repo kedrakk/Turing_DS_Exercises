@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.turingds.dsexercise.two3fourtree.SearchTwoThreeFourTest" time="0.047" tests="8" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.turingds.dsexercise.two3fourtree.SearchTwoThreeFourTest" time="0.075" tests="8" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/Applications/Apache NetBeans.app/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/kedk/NetBeansProjects/dsexercise/target/surefire/surefirebooter-20250304223020759_3.jar /Users/kedk/NetBeansProjects/dsexercise/target/surefire 2025-03-04T22-30-20_690-jvmRun1 surefire-20250304223020759_1tmp surefire_0-20250304223020759_2tmp"/>
+    <property name="sun.java.command" value="/Users/kedk/NetBeansProjects/dsexercise/target/surefire/surefirebooter-20250308074234958_3.jar /Users/kedk/NetBeansProjects/dsexercise/target/surefire 2025-03-08T07-42-34_881-jvmRun1 surefire-20250308074234958_1tmp surefire_0-20250308074234958_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="com.turingds.dsexercise.two3fourtree.SearchTwoThreeFourTest"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/kedk/NetBeansProjects/dsexercise/target/surefire/surefirebooter-20250304223020759_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/kedk/NetBeansProjects/dsexercise/target/surefire/surefirebooter-20250308074234958_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="23.0.1+11"/>
@@ -60,22 +60,16 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="testSearchNegativeCase" classname="com.turingds.dsexercise.two3fourtree.SearchTwoThreeFourTest" time="0.017"/>
+  <testcase name="testSearchNegativeCase" classname="com.turingds.dsexercise.two3fourtree.SearchTwoThreeFourTest" time="0.025"/>
   <testcase name="testSearchBaseCase" classname="com.turingds.dsexercise.two3fourtree.SearchTwoThreeFourTest" time="0.001"/>
   <testcase name="testSearchLevel1ThreeTree" classname="com.turingds.dsexercise.two3fourtree.SearchTwoThreeFourTest" time="0.001"/>
   <testcase name="testSearchLevel1FourTree" classname="com.turingds.dsexercise.two3fourtree.SearchTwoThreeFourTest" time="0.001"/>
   <testcase name="testSearchLevel1Depth" classname="com.turingds.dsexercise.two3fourtree.SearchTwoThreeFourTest" time="0.001"/>
-  <testcase name="testDepth3" classname="com.turingds.dsexercise.two3fourtree.SearchTwoThreeFourTest" time="0.007">
-    <system-out><![CDATA[Current node:[205 null null ]
-Current node:[215 300 null ]
-Current node:[310 350 null ]
-Search node for insert ==>[310 350 null ]
-Current node:[205 null null ]
-Current node:[215 300 null ]
-Current node:[210 null null ]
+  <testcase name="testDepth3" classname="com.turingds.dsexercise.two3fourtree.SearchTwoThreeFourTest" time="0.008">
+    <system-out><![CDATA[Search node for insert ==>[310 350 null ]
 Search node for insert ==>[210 null null ]
 ]]></system-out>
   </testcase>
-  <testcase name="testSearchLevel1DepthLeftSide" classname="com.turingds.dsexercise.two3fourtree.SearchTwoThreeFourTest" time="0.0"/>
-  <testcase name="testSearchSingleNode" classname="com.turingds.dsexercise.two3fourtree.SearchTwoThreeFourTest" time="0.0"/>
+  <testcase name="testSearchLevel1DepthLeftSide" classname="com.turingds.dsexercise.two3fourtree.SearchTwoThreeFourTest" time="0.001"/>
+  <testcase name="testSearchSingleNode" classname="com.turingds.dsexercise.two3fourtree.SearchTwoThreeFourTest" time="0.001"/>
 </testsuite>

@@ -17,16 +17,16 @@ public class TwoThreeFourTree {
             root = this.createTwoNodes(root, i);
             return root;
         } else {
-            Node node = this.root.searchForInsert(i);
+            Node node = this.root.searchForInsert(i,this);
             if (node.noOfNode != 4) {
-                return node.insert(i);
+                return node.insert(i, this);
             } else { //split 
-                Node splitParent = node.splitNode(node);
+                Node splitParent = node.splitNode(node,this);
                 if (node.parent == null) {
                     this.root = splitParent;
                 }
-                node = this.root.searchForInsert(i);
-                return node.insert(i);
+                node = this.root.searchForInsert(i,this);
+                return node.insert(i, this);
             }
         }
     }

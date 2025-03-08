@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.turingds.dsexercise.two3fourtree.TwoThreeFourTest" time="0.029" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.turingds.dsexercise.two3fourtree.TwoThreeFourTest" time="0.035" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/Applications/Apache NetBeans.app/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/kedk/NetBeansProjects/dsexercise/target/surefire/surefirebooter-20250305222642287_3.jar /Users/kedk/NetBeansProjects/dsexercise/target/surefire 2025-03-05T22-26-42_244-jvmRun1 surefire-20250305222642287_1tmp surefire_0-20250305222642287_2tmp"/>
+    <property name="sun.java.command" value="/Users/kedk/NetBeansProjects/dsexercise/target/surefire/surefirebooter-20250308105505746_3.jar /Users/kedk/NetBeansProjects/dsexercise/target/surefire 2025-03-08T10-55-05_660-jvmRun1 surefire-20250308105505746_1tmp surefire_0-20250308105505746_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="com.turingds.dsexercise.two3fourtree.TwoThreeFourTest"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/kedk/NetBeansProjects/dsexercise/target/surefire/surefirebooter-20250305222642287_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/kedk/NetBeansProjects/dsexercise/target/surefire/surefirebooter-20250308105505746_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="23.0.1+11"/>
@@ -60,11 +60,8 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="testInsertBaseCase" classname="com.turingds.dsexercise.two3fourtree.TwoThreeFourTest" time="0.011"/>
-  <testcase name="testInsertSmallBaseCaseFour" classname="com.turingds.dsexercise.two3fourtree.TwoThreeFourTest" time="0.0"/>
-  <testcase name="testSplitInsertBaseCase" classname="com.turingds.dsexercise.two3fourtree.TwoThreeFourTest" time="0.0"/>
-  <testcase name="testInsertSmallBaseCase" classname="com.turingds.dsexercise.two3fourtree.TwoThreeFourTest" time="0.0"/>
-  <testcase name="testInsertSplitCaseAndChild1" classname="com.turingds.dsexercise.two3fourtree.TwoThreeFourTest" time="0.0"/>
-  <testcase name="testInsertSplitCaseAndChild2" classname="com.turingds.dsexercise.two3fourtree.TwoThreeFourTest" time="0.001"/>
-  <testcase name="testInsertLargeBaseCase" classname="com.turingds.dsexercise.two3fourtree.TwoThreeFourTest" time="0.001"/>
+  <testcase name="testInsertSplitCaseAndParentUpLvl3" classname="com.turingds.dsexercise.two3fourtree.TwoThreeFourTest" time="0.022">
+    <system-out><![CDATA[child1:[203 205 null ]
+]]></system-out>
+  </testcase>
 </testsuite>

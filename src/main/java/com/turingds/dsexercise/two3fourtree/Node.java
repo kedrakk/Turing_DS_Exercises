@@ -18,12 +18,12 @@ public class Node {
     int noOfNode = 1;
     static int ORDER = 4;
 
-    public Node insert(int item) {
+    public Node insert(int item, TwoThreeFourTree tree) {
         if (noOfNode != 4) {
             return simpleInsert(item);
         } else {
             //spilt case
-            Node splitParent = this.splitNode(this);
+            Node splitParent = this.splitNode(this, tree);
 
             //need to find leaf node to insert
             return splitParent;
@@ -48,34 +48,36 @@ public class Node {
         return this;
     }
 
-    protected Node splitNode(Node node) {
+    protected Node splitNode(Node node, TwoThreeFourTree tree) {
         //simple split
         if (node.parent == null) {
-            return splitWithNoParent(node);
+            Node currentParent = splitWithNoParent(node, tree);
+            tree.root = currentParent;
+            return currentParent;
         } else {
-            return splitWithParent(node);
+            return splitWithParent(node, tree);
         }
     }
 
-    private Node splitWithNoParent(Node node) {
+    private Node splitWithNoParent(Node node, TwoThreeFourTree tree) {
         Node current = new Node();
-        current.insert(node.keys[1]);
+        current.insert(node.keys[1], tree);
 
         //spliting children
         Node child0 = new Node();
         child0.parent = current;
-        child0.insert(node.keys[0]);
+        child0.insert(node.keys[0], tree);
 
         Node child1 = new Node();
         child1.parent = current;
-        child1.insert(node.keys[2]);
+        child1.insert(node.keys[2], tree);
 
         current.children.add(child0);
         current.children.add(child1);
 
         return current;
     }
-    
+
     int getChildIndex(Node node) {
         int childSize = node.parent.children.size();
         for (int i = 0; i < childSize; i++) {
@@ -87,20 +89,23 @@ public class Node {
         return -1;
     }
 
-    private Node splitWithParent(Node node) {
+    private Node splitWithParent(Node node, TwoThreeFourTree tree) {
         Node current = node.parent;
-        current.insert(node.keys[1]);
+        current.insert(node.keys[1], tree);
 
         //spliting children
         int childIndex = getChildIndex(node);
         Node child0 = new Node();
         child0.parent = current;
-        child0.insert(node.keys[0]);
+        child0.insert(node.keys[0], tree);
 
         Node child1 = new Node();
         child1.parent = current;
-        child1.insert(node.keys[2]);
-        
+        child1.insert(node.keys[2], tree);
+
+        //Remove first
+        parent.children.remove(childIndex);
+
         current.children.add(childIndex, child1);
         current.children.add(childIndex, child0);
 
@@ -140,8 +145,12 @@ public class Node {
         }
     }
 
-    Node searchForInsert(int item) {
+    Node searchForInsert(int item, TwoThreeFourTree tree) {
         Node current = this;
+        if (current.noOfNode == 4) {
+            Node parentNode = this.splitNode(current, tree);
+            return parentNode.searchForInsert(item, tree);
+        }
         int index = 0;
         while (index < current.keys.length && current.keys[index] != null) {
             if (current.keys[index] == item) {
@@ -162,7 +171,7 @@ public class Node {
 
             Node node = current.children.get(index);
             if (node != null) {
-                return node.searchForInsert(item);
+                return node.searchForInsert(item, tree);
             } else {
                 return null;
             }
