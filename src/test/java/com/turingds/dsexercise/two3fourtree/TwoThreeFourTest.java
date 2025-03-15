@@ -157,22 +157,21 @@ public class TwoThreeFourTest {
         assertEquals(120, child0.keys[0]);
 
         Node child1 = root.children.get(1);
-        System.out.println("child1:" + child1);
+        assertEquals(203, child1.keys[0]);
 
-//        Node grandParent = parent.parent;
-//        assertEquals(120, grandParent.keys[0]);
-//        Node child0 = parent.children.get(0);
-//        assertEquals(100, child0.keys[0]);
-//
-//        Node child1 = parent.children.get(1);
-//        assertEquals(102, child1.keys[0]);
-//        assertEquals(103, child1.keys[1]);
-//
-//        Node child2 = parent.children.get(2);
-//        assertEquals(150, child2.keys[0]);
-//
-//        Node child3 = parent.children.get(3);
-//        assertEquals(201, child3.keys[0]);
-//        assertEquals(202, child3.keys[1]);
+        Node searchNode = root.searchForInsert(206, tree);
+
+        Node lvl1Child0 = child0.children.get(0);
+        assertEquals(100, lvl1Child0.keys[0]);
+
+        Node lvl1Child1 = child0.children.get(1);
+        assertEquals(150, lvl1Child1.keys[0]);
+
+        Node lvl1Child10 = child1.children.get(0);
+        assertEquals(201, lvl1Child10.keys[0]);
+        
+        Node lvl1Child11 = child1.children.get(1);
+        assertEquals(204, lvl1Child11.keys[0]);
+        assertEquals(205, lvl1Child11.keys[1]);
     }
 }

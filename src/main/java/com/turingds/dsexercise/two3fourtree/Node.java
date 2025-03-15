@@ -68,14 +68,33 @@ public class Node {
         child0.parent = current;
         child0.insert(node.keys[0], tree);
 
+        if (node.noOfNode == 4 && !node.isLeaf()) {
+            child0.children.add(node.children.get(0));
+            child0.children.add(node.children.get(1));
+        }
+
         Node child1 = new Node();
         child1.parent = current;
         child1.insert(node.keys[2], tree);
+
+        if (node.noOfNode == 4 && !node.isLeaf()) {
+            child1.children.add(node.children.get(2));
+            child1.children.add(node.children.get(3));
+        }
 
         current.children.add(child0);
         current.children.add(child1);
 
         return current;
+    }
+
+    int insertedIndex(Node node, int value) {
+        for (int i = 0; i < node.keys.length; i++) {
+            if (node.keys[i] == value) {
+                return i;
+            }
+        }
+        return -1;
     }
 
     int getChildIndex(Node node) {
@@ -94,14 +113,22 @@ public class Node {
         current.insert(node.keys[1], tree);
 
         //spliting children
-        int childIndex = getChildIndex(node);
+        int childIndex = insertedIndex(current, node.keys[1]);
         Node child0 = new Node();
         child0.parent = current;
         child0.insert(node.keys[0], tree);
+        if (node.noOfNode == 4 && !node.isLeaf()) {
+            child0.children.add(node.children.get(0));
+            child0.children.add(node.children.get(1));
+        }
 
         Node child1 = new Node();
         child1.parent = current;
         child1.insert(node.keys[2], tree);
+        if (node.noOfNode == 4 && !node.isLeaf()) {
+            child1.children.add(node.children.get(2));
+            child1.children.add(node.children.get(3));
+        }
 
         //Remove first
         parent.children.remove(childIndex);
