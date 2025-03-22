@@ -22,5 +22,8 @@ public class HashTableTest {
 
         ht.insert("hello");
         assertEquals(true, ht.contains("hello"));
+        
+        ht.insert("elloh");
+        assertEquals(true, ht.contains("elloh"));
     }
 }

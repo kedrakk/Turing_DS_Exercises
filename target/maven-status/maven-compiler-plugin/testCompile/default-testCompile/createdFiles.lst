@@ -10,7 +10,9 @@ com/turingds/dsexercise/datastructure/linkedlist/SortedListTest.class
 com/turingds/dsexercise/sorting/RadixSortTest.class
 com/turingds/dsexercise/tdd/CapitalTest.class
 com/turingds/dsexercise/hashing/HashTableTest.class
+com/turingds/dsexercise/heap/HeapTest.class
 com/turingds/dsexercise/sorting/MergeSortV2Test.class
+com/turingds/dsexercise/heap/HeapUtil.class
 com/turingds/dsexercise/datastructure/linkedlist/LinkedListIteratorTest.class
 com/turingds/dsexercise/sorting/QuickSortTest.class
 com/turingds/dsexercise/search/BinarySearchTest.class

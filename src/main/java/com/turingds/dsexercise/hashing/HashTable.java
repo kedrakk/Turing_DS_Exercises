@@ -4,24 +4,32 @@
  */
 package com.turingds.dsexercise.hashing;
 
+import java.util.LinkedList;
+
 /**
  *
  * @author kedk
  */
 public class HashTable {
 
-    String[] data = new String[10];
+    LinkedList[] data = new LinkedList[10];
 
-    public HashTable() {}
+    public HashTable() {
+        for (int i = 0; i < data.length; i++) {
+            data[i] = new LinkedList();
+        }
+    }
 
     public void insert(String word) {
-        int hasedWordIndex = HashTable.hash(word, 10);
-        data[hasedWordIndex] = word;
+        int hashedIndex = HashTable.hash(word, 10);
+        LinkedList linkedList = data[hashedIndex];
+        linkedList.add(word);
     }
 
     public Boolean contains(String word) {
         int hashedIndex = HashTable.hash(word, 10);
-        return data[hashedIndex] != null;
+        LinkedList linkedList = data[hashedIndex];
+        return linkedList.contains(word);
     }
 
     public static int hash(String word, int bucketSize) {
