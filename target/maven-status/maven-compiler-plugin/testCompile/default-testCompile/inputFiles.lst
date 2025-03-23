@@ -15,6 +15,7 @@
 /Users/kedk/NetBeansProjects/dsexercise/src/test/java/com/turingds/dsexercise/datastructure/tree/binary/PostorderTraversalTest.java
 /Users/kedk/NetBeansProjects/dsexercise/src/test/java/com/turingds/dsexercise/datastructure/tree/binary/array/BinaryTreeWithArrayPreorderTest.java
 /Users/kedk/NetBeansProjects/dsexercise/src/test/java/com/turingds/dsexercise/datastructure/tree/binary/array/BinaryTreeWithArrayTest.java
+/Users/kedk/NetBeansProjects/dsexercise/src/test/java/com/turingds/dsexercise/graph/AdjancencyMatrixGraphTest.java
 /Users/kedk/NetBeansProjects/dsexercise/src/test/java/com/turingds/dsexercise/hashing/HashTableTest.java
 /Users/kedk/NetBeansProjects/dsexercise/src/test/java/com/turingds/dsexercise/heap/HeapTest.java
 /Users/kedk/NetBeansProjects/dsexercise/src/test/java/com/turingds/dsexercise/heap/HeapUtil.java

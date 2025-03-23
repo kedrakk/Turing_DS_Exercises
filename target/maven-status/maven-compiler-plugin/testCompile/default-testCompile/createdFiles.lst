@@ -15,6 +15,7 @@ com/turingds/dsexercise/sorting/MergeSortV2Test.class
 com/turingds/dsexercise/heap/HeapUtil.class
 com/turingds/dsexercise/datastructure/linkedlist/LinkedListIteratorTest.class
 com/turingds/dsexercise/sorting/QuickSortTest.class
+com/turingds/dsexercise/graph/AdjancencyMatrixGraphTest.class
 com/turingds/dsexercise/search/BinarySearchTest.class
 com/turingds/dsexercise/datastructure/ReverseTest.class
 com/turingds/dsexercise/datastructure/tree/binary/BinaryTreeTest.class

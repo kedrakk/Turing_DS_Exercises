@@ -16,8 +16,10 @@ com/turingds/dsexercise/datastructure/tree/binary/array/BinaryTreeWithArray.clas
 com/turingds/dsexercise/datastructure/PostfixConverter.class
 com/turingds/dsexercise/search/RecursiveBinarySearchAlgorithm.class
 com/turingds/dsexercise/datastructure/Delimiter.class
+com/turingds/dsexercise/graph/GraphAList.class
 com/turingds/dsexercise/sorting/MergeSort.class
 com/turingds/dsexercise/util/TreeUtils.class
+com/turingds/dsexercise/graph/GraphAMatrix.class
 com/turingds/dsexercise/two3fourtree/Node.class
 com/turingds/dsexercise/datastructure/tree/binary/PreorderTraversalIterative$TreeIterator.class
 com/turingds/dsexercise/datastructure/linkedlist/SortedList.class
