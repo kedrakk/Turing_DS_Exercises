@@ -16,7 +16,8 @@ import static org.junit.jupiter.api.Assertions.*;
 public class AdjancencyMatrixGraphTest {
 
     //GraphAMatrix graph = new GraphAMatrix();
-    GraphAList graph = new GraphAList();
+//    GraphAList graph = new GraphAList();
+    Graph graph = new GraphAMatrix();
 
     void buildAction() {
         graph.setVertice("A");
@@ -29,7 +30,7 @@ public class AdjancencyMatrixGraphTest {
         graph.build();
     }
 
-    //@Test
+    @Test
     public void testGraphEdgeExist() {
         this.buildAction();
         graph.addEdge("A", "B");
@@ -42,48 +43,69 @@ public class AdjancencyMatrixGraphTest {
         assertTrue(graph.existEdge("B", "A"));
     }
 
-    //@Test
-//    public void testDFSAdjacency() {
-//        this.buildAction();
-//        graph.addEdge("A", "B");
-//        graph.addEdge("A", "C");
-//        graph.addEdge("B", "D");
-//        graph.addEdge("B", "E");
-//        graph.addEdge("C", "F");
-//        graph.addEdge("D", "E");
-//
-//        List<String> adjVertext = graph.getAdjacentVertex("A");
-//        Iterator<String> iterator = adjVertext.iterator();
-//        assertEquals("B", iterator.next());
-//        assertEquals("C", iterator.next());
-//        assertFalse(iterator.hasNext());
-//
-//        adjVertext = graph.getAdjacentVertex("B");
-//        iterator = adjVertext.iterator();
-//        assertEquals("A", iterator.next());
-//        assertEquals("D", iterator.next());
-//        assertEquals("E", iterator.next());
-//        assertFalse(iterator.hasNext());
-//    }
+    @Test
+    public void testDFSAdjacency() {
+        this.buildAction();
+        graph.addEdge("A", "B");
+        graph.addEdge("A", "C");
+        graph.addEdge("B", "D");
+        graph.addEdge("B", "E");
+        graph.addEdge("C", "F");
+        graph.addEdge("D", "E");
 
-//    @Test
-//    public void testDFS() {
-//        this.buildAction();
-//        graph.addEdge("A", "B");
-//        graph.addEdge("A", "C");
-//        graph.addEdge("B", "D");
-//        graph.addEdge("B", "E");
-//        graph.addEdge("C", "F");
-//        graph.addEdge("D", "E");
-//
-//        List<String> dfsVertices = graph.depthFirstSearch();
-//        Iterator<String> iterator = dfsVertices.iterator();
-//
-//        assertEquals("A", iterator.next());
-//        assertEquals("B", iterator.next());
-//        assertEquals("D", iterator.next());
-//        assertEquals("E", iterator.next());
-//        assertEquals("C", iterator.next());
-//        assertEquals("F", iterator.next());
-//    }
+        List<String> adjVertext = graph.getAdjacentVertex("A");
+        Iterator<String> iterator = adjVertext.iterator();
+        assertEquals("B", iterator.next());
+        assertEquals("C", iterator.next());
+        assertFalse(iterator.hasNext());
+
+        adjVertext = graph.getAdjacentVertex("B");
+        iterator = adjVertext.iterator();
+        assertEquals("A", iterator.next());
+        assertEquals("D", iterator.next());
+        assertEquals("E", iterator.next());
+        assertFalse(iterator.hasNext());
+    }
+
+    @Test
+    public void testDFS() {
+        this.buildAction();
+        graph.addEdge("A", "B");
+        graph.addEdge("A", "C");
+        graph.addEdge("B", "D");
+        graph.addEdge("B", "E");
+        graph.addEdge("C", "F");
+        graph.addEdge("D", "E");
+
+        List<String> dfsVertices = graph.depthFirstSearch();
+        Iterator<String> iterator = dfsVertices.iterator();
+
+        assertEquals("A", iterator.next());
+        assertEquals("B", iterator.next());
+        assertEquals("D", iterator.next());
+        assertEquals("E", iterator.next());
+        assertEquals("C", iterator.next());
+        assertEquals("F", iterator.next());
+    }
+    
+    @Test
+    public void testBFS() {
+        this.buildAction();
+        graph.addEdge("A", "B");
+        graph.addEdge("A", "C");
+        graph.addEdge("B", "D");
+        graph.addEdge("B", "E");
+        graph.addEdge("C", "F");
+        graph.addEdge("D", "E");
+
+        List<String> dfsVertices = graph.breathFirstSearch();
+        Iterator<String> iterator = dfsVertices.iterator();
+
+        assertEquals("A", iterator.next());
+        assertEquals("B", iterator.next());
+        assertEquals("C", iterator.next());
+        assertEquals("D", iterator.next());
+        assertEquals("E", iterator.next());
+        assertEquals("F", iterator.next());
+    }
 }

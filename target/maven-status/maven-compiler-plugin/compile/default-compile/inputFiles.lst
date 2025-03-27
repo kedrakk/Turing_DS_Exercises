@@ -22,8 +22,10 @@
 /Users/kedk/NetBeansProjects/dsexercise/src/main/java/com/turingds/dsexercise/datastructure/tree/binary/PreorderTraversalIterative.java
 /Users/kedk/NetBeansProjects/dsexercise/src/main/java/com/turingds/dsexercise/datastructure/tree/binary/array/BinaryTreeWithArray.java
 /Users/kedk/NetBeansProjects/dsexercise/src/main/java/com/turingds/dsexercise/datastructure/tree/binary/array/BinaryTreeWithArrayPreorderTraversal.java
+/Users/kedk/NetBeansProjects/dsexercise/src/main/java/com/turingds/dsexercise/graph/Graph.java
 /Users/kedk/NetBeansProjects/dsexercise/src/main/java/com/turingds/dsexercise/graph/GraphAList.java
 /Users/kedk/NetBeansProjects/dsexercise/src/main/java/com/turingds/dsexercise/graph/GraphAMatrix.java
+/Users/kedk/NetBeansProjects/dsexercise/src/main/java/com/turingds/dsexercise/graph/WeightedGraph.java
 /Users/kedk/NetBeansProjects/dsexercise/src/main/java/com/turingds/dsexercise/hashing/HashTable.java
 /Users/kedk/NetBeansProjects/dsexercise/src/main/java/com/turingds/dsexercise/heap/MaxHeap.java
 /Users/kedk/NetBeansProjects/dsexercise/src/main/java/com/turingds/dsexercise/recursion/Factorial.java

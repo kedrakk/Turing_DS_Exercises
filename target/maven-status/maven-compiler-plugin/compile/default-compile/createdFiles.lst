@@ -34,8 +34,10 @@ com/turingds/dsexercise/datastructure/tree/binary/BinaryTreeTraversal.class
 com/turingds/dsexercise/searching/SearchAlgorithm.class
 com/turingds/dsexercise/datastructure/tree/binary/PreorderTraversal.class
 com/turingds/dsexercise/hashing/HashTable.class
+com/turingds/dsexercise/graph/Graph.class
 com/turingds/dsexercise/datastructure/linkedlist/LinkedList$ListIterator.class
 com/turingds/dsexercise/datastructure/linkedlist/LinkedList.class
+com/turingds/dsexercise/graph/WeightedGraph.class
 com/turingds/dsexercise/datastructure/tree/binary/InorderTraversal.class
 com/turingds/dsexercise/datastructure/tree/binary/PostorderTraversalIterative$TreeIterator.class
 com/turingds/dsexercise/datastructure/tree/binary/PreorderTraversal$TreeIterator.class

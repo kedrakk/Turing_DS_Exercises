@@ -11,17 +11,11 @@ import java.util.List;
  *
  * @author kedk
  */
-class GraphAList {
+class GraphAList extends Graph{
 
-    List<String> vertices = new ArrayList<>();
     List<List<String>> adjancencyList = new ArrayList<>();
 
-    void setVertice(String a) {
-        if (!this.vertices.contains(a)) {
-            this.vertices.add(a);
-        }
-    }
-
+    @Override
     void build() {
         for (String vertex : this.vertices) {
             List<String> adjList = new ArrayList<>();
@@ -29,15 +23,29 @@ class GraphAList {
         }
     }
 
+    @Override
     void addEdge(String from, String to) {
         int fromIndex = this.vertices.indexOf(from);
         List<String> adjList = this.adjancencyList.get(fromIndex);
         adjList.add(to);
+        
+        int toIndex = this.vertices.indexOf(to);
+        adjList = this.adjancencyList.get(toIndex);
+        adjList.add(from);
     }
 
+    @Override
     boolean existEdge(String from, String to) {
         int fromIndex = this.vertices.indexOf(from);
         List<String> adjList = this.adjancencyList.get(fromIndex);
         return adjList.contains(to);
     }
+
+    @Override
+    List<String> getAdjacentVertex(String from) {
+        int fromIndex = this.vertices.indexOf(from);
+        List<String> adjList = this.adjancencyList.get(fromIndex);
+        return adjList;
+    }
+
 }
