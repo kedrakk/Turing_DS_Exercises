@@ -11,6 +11,7 @@ com/turingds/dsexercise/datastructure/tree/binary/BinaryTree.class
 com/turingds/dsexercise/search/LinearSearch.class
 com/turingds/dsexercise/sorting/RadixSort.class
 com/turingds/dsexercise/datastructure/tree/binary/array/BinaryTreeWithArrayPreorderTraversal$TreeIterator.class
+com/turingds/dsexercise/graph/Edge.class
 com/turingds/dsexercise/sorting/ShellSorting.class
 com/turingds/dsexercise/datastructure/tree/binary/array/BinaryTreeWithArray.class
 com/turingds/dsexercise/datastructure/PostfixConverter.class
@@ -40,6 +41,7 @@ com/turingds/dsexercise/datastructure/linkedlist/LinkedList.class
 com/turingds/dsexercise/graph/WeightedGraph.class
 com/turingds/dsexercise/datastructure/tree/binary/InorderTraversal.class
 com/turingds/dsexercise/datastructure/tree/binary/PostorderTraversalIterative$TreeIterator.class
+com/turingds/dsexercise/graph/GraphEdgeRep.class
 com/turingds/dsexercise/datastructure/tree/binary/PreorderTraversal$TreeIterator.class
 com/turingds/dsexercise/datastructure/StackByLinkedList.class
 com/turingds/dsexercise/datastructure/tree/binary/PreorderTraversalIterative.class

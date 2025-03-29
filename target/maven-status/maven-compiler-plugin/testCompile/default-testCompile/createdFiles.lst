@@ -31,5 +31,6 @@ com/turingds/dsexercise/search/RecursiveBinarySearchTest.class
 com/turingds/dsexercise/datastructure/PostfixConverterTest.class
 com/turingds/dsexercise/datastructure/tree/binary/BinaryTreeDeletionTest.class
 com/turingds/dsexercise/util/UtilsTest.class
+com/turingds/dsexercise/graph/KruskalTest.class
 com/turingds/dsexercise/two3fourtree/TwoThreeFourTest.class
 com/turingds/dsexercise/datastructure/tree/binary/array/BinaryTreeWithArrayTest.class
