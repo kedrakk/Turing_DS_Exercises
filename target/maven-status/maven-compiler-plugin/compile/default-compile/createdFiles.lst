@@ -19,6 +19,7 @@ com/turingds/dsexercise/search/RecursiveBinarySearchAlgorithm.class
 com/turingds/dsexercise/datastructure/Delimiter.class
 com/turingds/dsexercise/graph/GraphAList.class
 com/turingds/dsexercise/sorting/MergeSort.class
+com/turingds/dsexercise/graph/UnionFind.class
 com/turingds/dsexercise/util/TreeUtils.class
 com/turingds/dsexercise/graph/GraphAMatrix.class
 com/turingds/dsexercise/two3fourtree/Node.class

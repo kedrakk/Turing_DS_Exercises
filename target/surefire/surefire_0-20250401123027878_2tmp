@@ -1,0 +1,6 @@
+#surefire_0
+#Tue Apr 01 12:30:27 GMT+06:30 2025
+basedir=/Users/kedk/NetBeansProjects/dsexercise
+localRepository=/Users/kedk/.m2/repository
+maven.ext.class.path=/Applications/Apache NetBeans.app/Contents/Resources/netbeans/java/maven-nblib/netbeans-eventspy.jar
+test=com.turingds.dsexercise.graph.UnionFindTest
