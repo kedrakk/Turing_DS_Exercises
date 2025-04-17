@@ -4,6 +4,7 @@ com/turingds/dsexercise/datastructure/tree/binary/PostorderTraversalTest.class
 com/turingds/dsexercise/search/LinearSearchTest.class
 com/turingds/dsexercise/datastructure/DelimiterTest.class
 com/turingds/dsexercise/DsexerciseTest.class
+com/turingds/dsexercise/graph/DijkstraTest.class
 com/turingds/dsexercise/datastructure/QueueTest.class
 com/turingds/dsexercise/datastructure/CircularQueueTest.class
 com/turingds/dsexercise/graph/GraphWithEdgeDFSTest.class

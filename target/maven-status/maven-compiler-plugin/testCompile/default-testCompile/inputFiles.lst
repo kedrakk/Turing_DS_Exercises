@@ -16,6 +16,7 @@
 /Users/kedk/NetBeansProjects/dsexercise/src/test/java/com/turingds/dsexercise/datastructure/tree/binary/array/BinaryTreeWithArrayPreorderTest.java
 /Users/kedk/NetBeansProjects/dsexercise/src/test/java/com/turingds/dsexercise/datastructure/tree/binary/array/BinaryTreeWithArrayTest.java
 /Users/kedk/NetBeansProjects/dsexercise/src/test/java/com/turingds/dsexercise/graph/AdjancencyMatrixGraphTest.java
+/Users/kedk/NetBeansProjects/dsexercise/src/test/java/com/turingds/dsexercise/graph/DijkstraTest.java
 /Users/kedk/NetBeansProjects/dsexercise/src/test/java/com/turingds/dsexercise/graph/GraphWithEdgeDFSTest.java
 /Users/kedk/NetBeansProjects/dsexercise/src/test/java/com/turingds/dsexercise/graph/KruskalTest.java
 /Users/kedk/NetBeansProjects/dsexercise/src/test/java/com/turingds/dsexercise/graph/UnionFindTest.java

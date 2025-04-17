@@ -10,6 +10,7 @@ com/turingds/dsexercise/datastructure/Queue.class
 com/turingds/dsexercise/datastructure/tree/binary/BinaryTree.class
 com/turingds/dsexercise/search/LinearSearch.class
 com/turingds/dsexercise/sorting/RadixSort.class
+com/turingds/dsexercise/graph/VertexDistance.class
 com/turingds/dsexercise/datastructure/tree/binary/array/BinaryTreeWithArrayPreorderTraversal$TreeIterator.class
 com/turingds/dsexercise/graph/Edge.class
 com/turingds/dsexercise/sorting/ShellSorting.class
