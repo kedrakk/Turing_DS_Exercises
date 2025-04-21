@@ -148,11 +148,11 @@ class GraphAMatrix extends Graph {
             for (String neighbor : neighbors) {
                 int index = this.vertices.indexOf(vtxDistance.vertex);
                 int neighborIndex = this.vertices.indexOf(neighbor);
-                double alt = this.weights[index] + this.weights[neighborIndex];
+                double alt = this.weights[index] + this.matrix[index][neighborIndex];
 
-                if (alt < this.weights[index]) {
-                    this.weights[index] = alt;
-                    this.previous[index] = neighbor;
+                if (alt < this.weights[neighborIndex]) {
+                    this.weights[neighborIndex] = alt;
+                    this.previous[neighborIndex] = vtxDistance.vertex;
                 }
             }
         }

@@ -46,82 +46,90 @@ public class DijkstraTest {
         graph.initDijkstra();
     }
 
+//    @Test
+//    public void getMinDistVertexFromUnvisitedBaseCase() {
+//        List<String> unvisited = new ArrayList<>();
+//        for (String vertex : graph.vertices) {
+//            unvisited.add(vertex);
+//        }
+//
+//        VertexDistance vtxDist = graph.getVerticesWithSmallestDistanceFromUnvisited(unvisited);
+//
+//        assertEquals("A", vtxDist.vertex);
+//    }
+//
+//    @Test
+//    public void getMinDistVertexFromUnvisitedCase1() {
+//        List<String> unvisited = new ArrayList<>();
+//        for (String vertex : graph.vertices) {
+//            unvisited.add(vertex);
+//        }
+//        unvisited.remove("A");
+//
+//        graph.addTotalWeightToVertex("B", 3);
+//        graph.addTotalWeightToVertex("C", 5);
+//        graph.addTotalWeightToVertex("D", 1);
+//
+//        VertexDistance vtxDist = graph.getVerticesWithSmallestDistanceFromUnvisited(unvisited);
+//
+//        assertEquals("D", vtxDist.vertex);
+//    }
+//
+//    @Test
+//    public void getMinDistVertexFromUnvisitedCasePrevious() {
+//        List<String> unvisited = new ArrayList<>();
+//        for (String vertex : graph.vertices) {
+//            unvisited.add(vertex);
+//        }
+//        unvisited.remove("A");
+//
+//        graph.addTotalWeightToVertex("B", 7);
+//        graph.addTotalWeightToVertex("C", 9);
+//        graph.addTotalWeightToVerticeWithPrevious("D", 4, "A");
+//        graph.addTotalWeightToVerticeWithPrevious("E", 2, "D");
+//
+//        VertexDistance vtxDist = graph.getVerticesWithSmallestDistanceFromUnvisited(unvisited);
+//
+//        assertEquals("D", vtxDist.vertex);
+//        assertEquals(4, vtxDist.totalDistance);
+//    }
+//
+//    @Test
+//    public void testUnvisitedNeighbor() {
+//        List<String> unvisited = new ArrayList<>();
+//        for (String vertex : graph.vertices) {
+//            unvisited.add(vertex);
+//        }
+//
+//        List<String> neighbors = graph.getUnvisitedNeighborOfVertex("A", unvisited);
+//        assertTrue(neighbors.contains("B"));
+//        assertTrue(neighbors.contains("C"));
+//        assertTrue(neighbors.contains("D"));
+//    }
+//
+//    @Test
+//    public void testUnvisitedNeighborCase1() {
+//        List<String> unvisited = new ArrayList<>();
+//        for (String vertex : graph.vertices) {
+//            unvisited.add(vertex);
+//        }
+//        unvisited.remove("B");
+//
+//        List<String> neighbors = graph.getUnvisitedNeighborOfVertex("A", unvisited);
+//        assertFalse(neighbors.contains("B"));
+//        assertTrue(neighbors.contains("C"));
+//        assertTrue(neighbors.contains("D"));
+//    }
+
     @Test
-    public void getMinDistVertexFromUnvisitedBaseCase() {
-        List<String> unvisited = new ArrayList<>();
-        for (String vertex : graph.vertices) {
-            unvisited.add(vertex);
-        }
-
-        VertexDistance vtxDist = graph.getVerticesWithSmallestDistanceFromUnvisited(unvisited);
-
-        assertEquals("A", vtxDist.vertex);
-    }
-
-    @Test
-    public void getMinDistVertexFromUnvisitedCase1() {
-        List<String> unvisited = new ArrayList<>();
-        for (String vertex : graph.vertices) {
-            unvisited.add(vertex);
-        }
-        unvisited.remove("A");
-
-        graph.addTotalWeightToVertex("B", 3);
-        graph.addTotalWeightToVertex("C", 5);
-        graph.addTotalWeightToVertex("D", 1);
-
-        VertexDistance vtxDist = graph.getVerticesWithSmallestDistanceFromUnvisited(unvisited);
-
-        assertEquals("D", vtxDist.vertex);
-    }
-
-    @Test
-    public void getMinDistVertexFromUnvisitedCasePrevious() {
-        List<String> unvisited = new ArrayList<>();
-        for (String vertex : graph.vertices) {
-            unvisited.add(vertex);
-        }
-        unvisited.remove("A");
-
-        graph.addTotalWeightToVertex("B", 7);
-        graph.addTotalWeightToVertex("C", 9);
-        graph.addTotalWeightToVerticeWithPrevious("D", 4, "A");
-        graph.addTotalWeightToVerticeWithPrevious("E", 2, "D");
-
-        VertexDistance vtxDist = graph.getVerticesWithSmallestDistanceFromUnvisited(unvisited);
-
-        assertEquals("D", vtxDist.vertex);
-        assertEquals(4, vtxDist.totalDistance);
-
-//        graph.addTotalWeightToVerticeWithPrevious("F", 2, "A");
-//        assertEquals("F", vtxDist.vertex);
-//        assertEquals(2, vtxDist.totalDistance);
-    }
-
-    @Test
-    public void testUnvisitedNeighbor() {
-        List<String> unvisited = new ArrayList<>();
-        for (String vertex : graph.vertices) {
-            unvisited.add(vertex);
-        }
-
-        List<String> neighbors = graph.getUnvisitedNeighborOfVertex("A", unvisited);
-        assertTrue(neighbors.contains("B"));
-        assertTrue(neighbors.contains("C"));
-        assertTrue(neighbors.contains("D"));
-    }
-
-    @Test
-    public void testUnvisitedNeighborCase1() {
-        List<String> unvisited = new ArrayList<>();
-        for (String vertex : graph.vertices) {
-            unvisited.add(vertex);
-        }
-        unvisited.remove("B");
-
-        List<String> neighbors = graph.getUnvisitedNeighborOfVertex("A", unvisited);
-        assertFalse(neighbors.contains("B"));
-        assertTrue(neighbors.contains("C"));
-        assertTrue(neighbors.contains("D"));
+    public void testDijkstra() {
+        String[] previous = graph.dijkstraAlgorithm();
+        assertEquals(null,previous[0]);
+        assertEquals("A",previous[1]);
+        assertEquals("D",previous[2]);
+        assertEquals("A",previous[3]);
+        assertEquals("D",previous[4]);
+        assertEquals("E",previous[5]);
+        assertEquals("E",previous[6]);
     }
 }

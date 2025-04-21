@@ -56,5 +56,6 @@ com/turingds/dsexercise/datastructure/tree/binary/InorderTraversal$TreeIterator.
 com/turingds/dsexercise/datastructure/tree/binary/InorderTraversalIterative$TreeIterator.class
 com/turingds/dsexercise/datastructure/QueueByLinkedList.class
 com/turingds/dsexercise/datastructure/tree/binary/InorderTraversalIterative.class
+com/turingds/dsexercise/machinelearning/NaiveBayesianSpamClassifer.class
 com/turingds/dsexercise/heap/MaxHeap.class
 com/turingds/dsexercise/datastructure/tree/binary/PostorderTraversal.class
